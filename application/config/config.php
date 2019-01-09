@@ -14,7 +14,11 @@
 | path to your installation.
 |
 */
+<<<<<<< HEAD
 $config['base_url']	= 'http://niteducation.ac.in/';
+=======
+$config['base_url']	= 'http://localhost/niteducation.ac.in';
+>>>>>>> ed82abaf5257518ba487bf46cdb4fdf4c735a5db
 
 /*
 |--------------------------------------------------------------------------
