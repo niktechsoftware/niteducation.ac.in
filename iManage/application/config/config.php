@@ -16,11 +16,11 @@
 | environments.
 |
 */
-<<<<<<< HEAD
-$config['base_url'] = 'http://niteducation.ac.in/iManage/';
-=======
-$config['base_url'] = 'http://localhost:/niteducation.ac.in/iManage/';
->>>>>>> ed82abaf5257518ba487bf46cdb4fdf4c735a5db
+
+//$config['base_url'] = 'http://niteducation.ac.in/iManage/';
+
+$config['base_url'] = 'http://localhost:8080/niteducation.ac.in/iManage/';
+
 
 /*
 |--------------------------------------------------------------------------
