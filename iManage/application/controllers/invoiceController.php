@@ -47,4 +47,9 @@ class InvoiceController extends CI_Controller{
 		//include(base_url()."assets/phpqrcode/qrlib.php");
 		$this->load->view("invoice/certificateC",$data);
 	}
+	public function certificateCmsme(){
+		$data['stu_id'] = $this->uri->segment(3);
+		//include(base_url()."assets/phpqrcode/qrlib.php");
+		$this->load->view("invoice/certificateCmsme",$data);
+	}
 }
