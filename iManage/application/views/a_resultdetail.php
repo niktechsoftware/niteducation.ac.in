@@ -48,6 +48,7 @@
         	@media print {
     			body * { visibility: hidden; }
     			#printcontent * { visibility: visible; }
+                
     	    }
     	</style>
     </head>

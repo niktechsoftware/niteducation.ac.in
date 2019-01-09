@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'https://niteducation.ac.in/';
+$config['base_url']	= 'http://niteducation.ac.in/';
 
 /*
 |--------------------------------------------------------------------------

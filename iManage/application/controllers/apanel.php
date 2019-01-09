@@ -507,6 +507,16 @@ class Apanel extends CI_Controller{
 		$data['footerJs'] = "footerJs/takeFeeJs";
 		$this->load->view("include/template",$data);
 	}
+	public function certificatemsme(){
+		$data['subPage'] = 'View Certificate';
+		$data['title'] = "Certificate";
+		$data['smallTitle'] = "View Certificate";
+		$data['pageTitle'] = "View Certificate";
+		$data['mainContent'] = "roll_certificate1";
+		$data['headerCss'] = "headerCss/takeFeeCss";
+		$data['footerJs'] = "footerJs/takeFeeJs";
+		$this->load->view("include/template",$data);
+	}
 	public function pmgdishForm(){
 		$data['subPage'] = 'PMGDISHA Form';
 		$data['title'] = "PMGDISHA Form";
@@ -529,7 +539,17 @@ class Apanel extends CI_Controller{
 			redirect(base_url()."apanel/certificate/false");
 		}
 	}
-	
+	public function getCertificatemsme(){
+		$roll = $this->input->post("rollnumber");
+		$this->db->where("student_id",$roll);
+		$frd = $this->db->get("student_info")->row();
+		if($frd){
+			redirect(base_url()."apanel/printCertificatemsme/$frd->student_id");
+		}
+		else{
+			redirect(base_url()."apanel/certificate/false");
+		}
+	}
 	public function printCertificate(){
 		$data['subPage'] = 'Student';
 		$data['smallTitle'] = "Admission Invoice";
@@ -541,7 +561,17 @@ class Apanel extends CI_Controller{
 		$data['stu_id'] = $this->uri->segment(3);
 		$this->load->view("include/template",$data);
 	}
-	
+	public function printCertificatemsme(){
+		$data['subPage'] = 'Student';
+		$data['smallTitle'] = "Admission Invoice";
+		$data['pageTitle'] = "Student Profile/Admission Invoice";
+		$data['title'] = "Student Profile";
+		$data['mainContent'] = "printCertificatemsme";
+		$data['headerCss'] = "headerCss/dashboardCss";
+		$data['footerJs'] = "footerJs/dashboardJs";
+		$data['stu_id'] = $this->uri->segment(3);
+		$this->load->view("include/template",$data);
+	}
 	function updateStatus(){
 		$id = $this->input->post("id");
 		$status = $this->input->post("status");

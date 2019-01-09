@@ -16,7 +16,7 @@
 | environments.
 |
 */
-$config['base_url'] = 'https://niteducation.ac.in/iManage/';
+$config['base_url'] = 'http://niteducation.ac.in/iManage/';
 
 /*
 |--------------------------------------------------------------------------
