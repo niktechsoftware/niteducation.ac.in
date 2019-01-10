@@ -96,8 +96,8 @@
         }
 
         .photo {
-            margin-top: 35px;
-            margin-left: 540px;
+            margin-top: 35.5px;
+            margin-left: 554px;
             
             height: 126px;
             width: 105px;
@@ -107,9 +107,9 @@
         }
 
         .tbl1 {
-            margin-top: 255px;
+            margin-top: 260px;
             width: 78%;
-            margin-left: 117px;
+            margin-left: 95px;
             text-align: center;
 
         }
@@ -125,7 +125,7 @@
         .tbl2 {
 
             width: 79%;
-            margin-left: 115px;
+            margin-left: 100px;
             height: 305px;
             text-align: center;
 
@@ -222,7 +222,7 @@
                     </table>
                 </div>
 
-                <div class="row" style="margin-top:37px; margin-left:180px;">
+                <div class="row" style="margin-top:46px; margin-left:180px;">
                     <div class="col-md-5"></div>
                     <strong>
                         <?php echo $data['info']->name; ?></strong>
@@ -286,36 +286,36 @@
                                                 echo '<td> </td>';
                                                 
                                                 if($value->s_id == 1 || $value->s_id == 2 || $value->s_id == 3)
-                                                    echo '<td>'.$value->max_marks.'</td><td>-</td><td>-</td>';
+                                                    echo '<td></td><td></td><td></td>';/*.$value->max_marks.*/
                                                 
                                                 if($value->s_id == 4)
-                                                    echo '<td></td><td>'.$value->max_marks.'</td><td>'.$data['result']  [4]->max_marks.'</td>';
+                                                    echo '<td></td><td><strong>'.$value->max_marks.'</strong></td><td><strong>'.$data['result']  [4]->max_marks.'</strong></td>';
                                                     
                                                 if($value->s_id == 6)
-                                                    echo '<td>-</td><td>'.$value->max_marks.'</td><td>'.$data['result'][6]->max_marks.'</td>';
+                                                    echo '<td>-</td><td><strong>'.$value->max_marks.'</strong></td><td><strong>'.$data['result'][6]->max_marks.'</strong></td>';
                                                     
                                                  
                                                 if($value->s_id == 1 || $value->s_id == 2 || $value->s_id == 3)
-                                                    echo '<td>'.$value->marks_obtain.'</td><td>-</td><td>-</td>';
+                                                    echo '<td><strong>'.$value->marks_obtain.'</strong></td><td></td><td></td>';
                                                     
                                                 if($value->s_id == 4)
-                                                    echo '<td>-</td><td>'.$value->marks_obtain.'</td><td>'.$data['result'][4]->marks_obtain.'</td>';
+                                                    echo '<td>-</td><td><strong>'.$value->marks_obtain.'</strong></td><td><strong>'.$data['result'][4]->marks_obtain.'</strong></td>';
                                                     
                                                 if($value->s_id == 6)
-                                                    echo '<td>-</td><td>'.$value->marks_obtain.'</td><td>'.$data['result'][6]->marks_obtain.'</td>';
+                                                    echo '<td></td><td><strong>'.$value->marks_obtain.'</strong></td><td><strong>'.$data['result'][6]->marks_obtain.'</strong></td>';
                                                 
 
 
                                                 if($counter == 1)
-                                                    echo "<td colspan='2'>Pass</td>";
+                                                    echo "<td colspan='2'><strong>Pass</strong></td>";
                                                 if($counter == 2)
-                                                    echo "<td colspan='2'>500</td>";
+                                                    echo "<td colspan='2'><strong>500</strong></td>";
                                                 if($counter == 3)
-                                                    echo "<td colspan='2'>432</td>";
+                                                    echo "<td colspan='2'><strong>432</strong></td>";
                                                 if($counter == 4)
-                                                    echo "<td colspan='2'>70</td>";
+                                                    echo "<td colspan='2'><strong>70</strong></td>";
                                                 if($counter == 5)
-                                                    echo "<td colspan='2'>726</td>";
+                                                    echo "<td colspan='2'><strong>726</strong></td>";
                                                 
                                                 $counter++;
 
@@ -333,7 +333,7 @@
                         <tr style="height:135px;">
 
                             <td style="width:33%;">
-                                <div class="dt">27/10/2018</div>
+                                <div class="dt"> <strong>27/10/2018</strong></div>
                             </td>
 
 
@@ -342,7 +342,7 @@
                             </td>
 
                             <td style="width:33%;">
-                                <div class="exami"> CONTROLLER OF EXAMINATION</div>
+                                <div class="exami">&nbsp;</div>
                             </td>
 
                         </tr>

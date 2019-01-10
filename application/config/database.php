@@ -49,10 +49,14 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
+
 $db['default']['username'] = 'gfincuct_nitedu';
 $db['default']['password'] = 'rahul!123singh';
 $db['default']['database'] = 'gfincuct_nitedu';
-$db['default']['dbdriver'] = 'mysql';
+
+//$db['default']['username'] = 'root';
+//$db['default']['database'] = 'nite';
+//$db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
