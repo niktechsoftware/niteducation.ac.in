@@ -56,7 +56,7 @@ $db['default']['database'] = 'gfincuct_nitedu';
 
 //$db['default']['username'] = 'root';
 //$db['default']['database'] = 'nite';
-//$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
