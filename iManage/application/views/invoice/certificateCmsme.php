@@ -278,7 +278,10 @@
                                  = $this->db->query("SELECT `c_id`, `s_id`, `atten`, `marks_obtain`, `course_subject`.* FROM `subject_marks` JOIN `course_subject` ON `subject_marks`.`s_id` = `course_subject`.`sno` WHERE `subject_marks`.`student_id` = $studentID");
                                 $data['result'] = $result->result();
                                     $totalMarks = 0;
-                                   
+                                   foreach ($data['result'] as $key => $value)
+                                   {
+                                    $totalMarks += $value->marks_obtain;
+                                   }
                                     $counter = 1;
                                     foreach ($data['result'] as $key => $value):
                                         if($value->s_id != 5 && $value->s_id != 7):
@@ -311,7 +314,7 @@
                                                 if($counter == 2)
                                                     echo "<td colspan='2'><strong>500</strong></td>";
                                                 if($counter == 3)
-                                                    echo "<td colspan='2'><strong>432</strong></td>";
+                                                    echo "<td colspan='2'><strong>".$totalMarks."</strong></td>";
                                                 if($counter == 4)
                                                     echo "<td colspan='2'><strong>70</strong></td>";
                                                 if($counter == 5)
@@ -320,7 +323,7 @@
                                                 $counter++;
 
                                           endif;
-                                          $totalMarks += $value->marks_obtain;
+                                          
                                     endforeach;
                                 ?>
                     </table>

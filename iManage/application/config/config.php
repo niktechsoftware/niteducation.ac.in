@@ -17,9 +17,9 @@
 |
 */
 
-$config['base_url'] = 'https://niteducation.ac.in/iManage/';
+//$config['base_url'] = 'https://niteducation.ac.in/iManage/';
 
-//$config['base_url'] = 'http://localhost:8080/niteducation.ac.in/iManage/';
+$config['base_url'] = 'http://localhost:8080/niteducation.ac.in/iManage/';
 
 
 /*
