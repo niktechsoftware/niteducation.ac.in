@@ -25,7 +25,7 @@
                                   <li><a href="<?php echo base_url();?>apanel/pmgdishForm">PMGDISHA</a></li>
                                    <li><a href="<?php echo base_url();?>apanel/pmgdishalist">PMGDISHA List</a></li>
                                     <li><a href="<?php echo base_url();?>apanel/certificate">View Certificate</a></li>
-                                     <li><a href="<?php echo base_url();?>apanel/certificatemsme">View Yoga Certificate</a></li>
+                                    
                             </ul>
                         </li>
                         <li class="nav-heading"><span>Features</span></li>
@@ -160,6 +160,7 @@
 		                        		</span><p>&nbsp;&nbsp;&nbsp;Define Subject</p>
 		                        	</a>
 	                       		</li>
+                                 <li><a href="<?php echo base_url();?>apanel/certificatemsme">View Yoga Certificate</a></li>
                             </ul>
                         </li>
                     </ul>

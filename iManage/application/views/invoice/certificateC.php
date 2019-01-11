@@ -78,9 +78,9 @@ height:100%;
 			
 			<tr style="border: none;">
 				
-<td style="border: none;"></td>
+<td style="border: none;height:247px"></td>
 				<td style="border: none;">
-					<h3 style="padding-top:10px;"><?php echo $ids->aadhar_number;?></h3>
+					<h3 style="padding-top:24px;"><?php echo $ids->aadhar_number;?></h3>
 					<h3 style="padding-top:22px;"><?php echo $ids->name;?></h3>
 					<h3 style="padding-top:21px;"><?php echo $ids->mother_name;?>
 					<h3 style="padding-top:21px;"><?php echo $ids->fname;?></h3>
