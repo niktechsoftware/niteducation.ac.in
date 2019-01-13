@@ -176,6 +176,17 @@
 			                                    </select>
                                             </div>
                                         </div>
+
+                                         <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-2 control-label">Sr. No</label>
+                                            <div class="col-sm-4">
+                                                <input class="form-control" type="text" name="sr_no" value = "" placeholder="Sr. NO" required="required">
+                                            </div>
+                                            <label for="inputEmail3" class="col-sm-2 control-label">Certificate No.</label>
+                                            <div class="col-sm-4">
+                                                <input type="text" name="certificate_no" class="form-control" value = "" placeholder="Certificate No." required="required">
+                                            </div>
+                                        </div>
                                         
                                         <hr/>
                                         <div class="form-group">

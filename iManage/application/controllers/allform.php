@@ -348,6 +348,9 @@ class AllForm extends CI_Controller{
 				"branch_id" => $this->input->post("branchId"),
 				"branch_no" => $this->input->post("branchNo"),
 				"remark"=>$this->input->post("remark"),
+				"remark"=>$this->input->post("remark"),
+				"certificate_no"=>$this->input->post("certificate_no"),
+				"sr_no"=>$this->input->post("sr_no"),
 				"isApprove" => "yes"
 		);
 		$this->load->model("student_info");

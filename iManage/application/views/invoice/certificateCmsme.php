@@ -4,9 +4,10 @@
 <head>
     <title>Result</title>
 
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="width=device-width, initial-scale=1, target-densitydpi=device-dpi" name="viewport" />
     <meta content="width=device-width, initial-scale=1" name="print" />
     <meta charset="UTF-8">
+   
     <meta name="description" content="Admin Dashboard Template" />
     <meta name="keywords" content="admin,dashboard" />
     <meta name="author" content="Steelcoders" />
@@ -165,7 +166,11 @@
 </head>
 
 <body>
-    <?php 
+    <?php
+   include "phpqrcode/qrlib.php";
+   // QRcode::png("MY FIRST PHP QR CODE GENERATOR EXAMPLE") ; 
+
+
    
         $studentID=$stu_id;
     $this->db->where('student_id',$studentID);
@@ -281,7 +286,11 @@
                                    foreach ($data['result'] as $key => $value)
                                    {
                                     $totalMarks += $value->marks_obtain;
+
                                    }
+                                   $div=1;
+                                   $percent=$totalMarks/5;
+                                   
                                     $counter = 1;
                                     foreach ($data['result'] as $key => $value):
                                         if($value->s_id != 5 && $value->s_id != 7):
@@ -310,15 +319,43 @@
 
 
                                                 if($counter == 1)
+                                                {
+
+                                                    if($percent<50)
+                                                           {
+                                                               echo "<td colspan='2'><strong>Failed</strong></td>";
+                                                             
+                                                             }
+                                                    else
                                                     echo "<td colspan='2'><strong>Pass</strong></td>";
+                                                }
                                                 if($counter == 2)
                                                     echo "<td colspan='2'><strong>500</strong></td>";
                                                 if($counter == 3)
                                                     echo "<td colspan='2'><strong>".$totalMarks."</strong></td>";
                                                 if($counter == 4)
-                                                    echo "<td colspan='2'><strong>70</strong></td>";
+                                                    {
+                                                       if($percent<50)
+                                                           {
+                                                               echo "<td colspan='2'><strong>Failed</strong></td>";
+                                                             
+                                                             }
+                                                             elseif($percent>=50 && $percent < 60)
+                                                             {
+                                                               echo "<td colspan='2'><strong>III DIV</strong></td>";
+                                                             }
+                                                              elseif($percent>=60 && $percent < 80)
+                                                             {
+                                                               echo "<td colspan='2'><strong>II DIV</strong></td>";
+                                                             }
+                                                             elseif($percent>=80)
+                                                             {
+                                                               echo "<td colspan='2'><strong>I DIV</strong></td>";
+                                                             }
+
+                                                    }
                                                 if($counter == 5)
-                                                    echo "<td colspan='2'><strong>726</strong></td>";
+                                                    echo "<td colspan='2'><strong>".$percent."</strong></td>";
                                                 
                                                 $counter++;
 
@@ -341,8 +378,18 @@
 
 
                             <td style="width:33%;">
-                                <div class="bar"><img style="width:120px; height:110px;" src="<?php echo base_url()?>assets/images/stuImage/<?php echo $data['info']->photo; ?>"></div>
+                                <div class="bar">
+                        <?php 
+
+                           $qrdata="Yoga Teacher Training Name Examination- Student Name-".$data["info"]->name."/Father Name-".$data['info']->fName."/Mother Name-".$data['info']->mother_name."/Aadhar No-".$data['info']->aadhar_number."/Roll No-".$data['info']->student_id;
+                           QRcode::png ( $qrdata , "test.png ", "L", 5, 0) ;
+
+
+                        ?>
+                           <img src="<?php echo base_url();?>test.png" width="120px" height="110px"/>
+                           
                             </td>
+
 
                             <td style="width:33%;">
                                 <div class="exami">&nbsp;</div>
