@@ -48,12 +48,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-//$db['default']['hostname'] = 'localhost';
+$db['default']['hostname'] = 'localhost';
 
 //$db['default']['username'] = 'root';
 //$db['default']['password'] = '';
 //$db['default']['database'] = 'nite';
-
 
 $db['default']['username'] = 'gfincuct_nitedu';
 $db['default']['password'] = 'rahul!123singh';
