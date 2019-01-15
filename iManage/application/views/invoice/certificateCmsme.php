@@ -188,13 +188,13 @@
                         <td>
                             <div class="sn">
                                 <strong>
-                                    <?php echo $data['info']->signature; ?></strong>
+                                    <?php echo $data['info']->sr_no; ?></strong>
                             </div>
 
                         </td>
 
                         <td>
-                            <div class="photo">
+                            <div class="photo" >
                                 <img style="width:105px; height:125.5px;" src="<?php echo base_url()?>assets/images/stuImage/<?php echo $data['info']->photo; ?>">
                             </div>
                         </td>
@@ -206,20 +206,20 @@
                 <div class="tbl1">
                     <table class="example-table">
                         <tr>
-                            <td style="width:14.29%;">
+                            <td style="width:14.29%; padding-left:10px;">
                                 <strong><?php echo $data['info']->student_id; ?></strong>
                             </td>
-                            <td style="width:14.29%;">
-                                <strong>  <?php echo $data['info']->branch_id; ?></strong>
+                            <td style="width:14.29%;padding-left:40px;">
+                                <strong>UP30D0013828</strong>
                             </td>
-                            <td style="width:14.29%;"><strong>Private</strong></td>
+                            <td style="width:14.29%;padding-left:20px;"><strong>Regular</strong></td>
 
-                            <td style="width:14.29%;"><strong>Regular</strong></td>
-                            <td style="width:14.29%;"><strong>3 Year</strong></td>
+                            <td style="width:14.29%;padding-left:10px;"><strong>July:2017-18</strong></td>
+                            <td style="width:14.29%;"><strong>1 Year</strong></td>
                             <td style="padding-left:25px;">
-                                <strong><?php echo $data['info']->signature; ?></strong>
+                                <strong><?php echo $data['info']->certificate_no; ?></strong>
                             </td>
-                            <td style="width:14.29%;">
+                            <td style="width:14.29%;padding-left:5px;">
                                 <strong><?php echo $data['info']->id; ?></strong>
                             </td>
 
@@ -245,7 +245,7 @@
 
                 <div class="row" style="margin-top:21px; margin-left:180px;">
                     <div class="col-md-3"></div>
-                    <div><strong> NITE EXAMINATION </strong></div>
+                    <div><strong> National Institute of Technologies Ghazipur </strong></div>
                 </div>
 
 
@@ -253,24 +253,24 @@
 
                     <table class="example-table" id="items" style="height: 305px;">
                         <tr style="border:none; height:30px;">
-                            <td rowspan='3' style="width:285px;">विषय</td>
-                            <td colspan='3'>पूर्णांक</td>
+                            <td rowspan='3' style="width:285px;"></td>
+                            <td colspan='3'></td>
 
-                            <td colspan='3'>प्राप्तांक</td>
+                            <td colspan='3'></td>
                             <td colspan='3' rowspan="3" style="width:72px;">Result</td>
                         </tr>
                         <tr style="border:none; height:30px;">
-                            <td rowspan='2' style="width:65px; height:50px;">लिखित</td>
-                            <td colspan='2'>प्रायोगिक</td>
+                            <td rowspan='2' style="width:65px; height:50px;"></td>
+                            <td colspan='2'></td>
 
-                            <td rowspan='2' style="width:65px;">लिखित</td>
-                            <td colspan='2'>प्रायोगिक</td>
+                            <td rowspan='2' style="width:65px;"></td>
+                            <td colspan='2'></td>
                         </tr>
                         <tr>
-                            <td style="width:65px;">बाह्य</td>
-                            <td style="width:69px;">आंतरिक</td>
-                            <td style="width:62px;">बाह्य</td>
-                            <td style="width:75px;">आंतरिक</td>
+                            <td style="width:65px;"></td>
+                            <td style="width:69px;"></td>
+                            <td style="width:62px;"></td>
+                            <td style="width:75px;"></td>
 
                         </tr>
 
@@ -301,10 +301,10 @@
                                                     echo '<td></td><td></td><td></td>';/*.$value->max_marks.*/
                                                 
                                                 if($value->s_id == 4)
-                                                    echo '<td></td><td><strong>'.$value->max_marks.'</strong></td><td><strong>'.$data['result']  [4]->max_marks.'</strong></td>';
+                                                    echo '<td></td><td><strong></strong></td><td><strong></strong></td>';
                                                     
                                                 if($value->s_id == 6)
-                                                    echo '<td>-</td><td><strong>'.$value->max_marks.'</strong></td><td><strong>'.$data['result'][6]->max_marks.'</strong></td>';
+                                                    echo '<td>-</td><td><strong></strong></td><td><strong></strong></td>';
                                                     
                                                  
                                                 if($value->s_id == 1 || $value->s_id == 2 || $value->s_id == 3)
