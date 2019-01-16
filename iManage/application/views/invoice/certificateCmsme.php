@@ -209,18 +209,18 @@
                             <td style="width:14.29%; padding-left:10px;">
                                 <strong><?php echo $data['info']->student_id; ?></strong>
                             </td>
-                            <td style="width:14.29%;padding-left:40px;">
+                            <td style="width:14.29%;padding-left:22px;">
                                 <strong>UP30D0013828</strong>
                             </td>
                             <td style="width:14.29%;padding-left:20px;"><strong>Regular</strong></td>
 
                             <td style="width:14.29%;padding-left:10px;"><strong>July:2017-18</strong></td>
-                            <td style="width:14.29%;"><strong>1 Year</strong></td>
+                            <td style="width:17.29%;padding-left: 10px;"><strong>1 Year Diploma</strong></td>
                             <td style="padding-left:25px;">
                                 <strong><?php echo $data['info']->certificate_no; ?></strong>
                             </td>
                             <td style="width:14.29%;padding-left:5px;">
-                                <strong><?php echo $data['info']->id; ?></strong>
+                                <strong>MSME<?php echo $data['info']->id; ?></strong>
                             </td>
 
                         </tr>
@@ -230,22 +230,22 @@
                 <div class="row" style="margin-top:46px; margin-left:180px;">
                     <div class="col-md-5"></div>
                     <strong>
-                        <?php echo $data['info']->name; ?></strong>
+                        <?php echo strtoupper($data['info']->name); ?></strong>
                 </div>
                 <div class="row" style="margin-top:1px; margin-left:50px;">
                     <div class="col-md-5"></div>
                     <div style="margin-left:400px;"> <strong>
-                            <?php echo $data['info']->mother_name; ?></strong></div>
+                            <?php echo strtoupper($data['info']->mother_name) ; ?></strong></div>
                 </div>
                 <div class="row" style="margin-top:1px; margin-left:1px;">
                     <div class="col-md-3"></div>
                     <div><strong>
-                            <?php echo $data['info']->fName; ?></strong></div>
+                            <?php echo strtoupper($data['info']->fName) ; ?></strong></div>
                 </div>
 
                 <div class="row" style="margin-top:21px; margin-left:180px;">
                     <div class="col-md-3"></div>
-                    <div><strong> National Institute of Technologies Ghazipur </strong></div>
+                    <div><strong> National Institute of Technologies, Ghazipur </strong></div>
                 </div>
 
 
@@ -381,7 +381,7 @@
                                 <div class="bar">
                         <?php 
 
-                           $qrdata="Yoga Teacher Training Name Examination- Student Name-".$data["info"]->name."/Father Name-".$data['info']->fName."/Mother Name-".$data['info']->mother_name."/Aadhar No-".$data['info']->aadhar_number."/Roll No-".$data['info']->student_id;
+                           $qrdata="DYTT/JULY/2017-18/<".$studentID.">/<MSME".$data['info']->id.">/<".$data["info"]->certificate_no.">/<1 Year Diploma>/<UP30D0013828>/<Regular>/<".$data['info']->name.">/<".$data['info']->fName.">/<".$data['info']->mother_name.">";
                            QRcode::png ( $qrdata , "test.png ", "L", 5, 0) ;
 
 
