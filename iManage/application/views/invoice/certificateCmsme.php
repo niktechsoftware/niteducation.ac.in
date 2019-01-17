@@ -205,7 +205,7 @@
 
 
                 <div class="tbl1">
-                    <table class="example-table">
+                    <table class="example-table" style="border:none">
                         <tr>
                             <td style="width:14.29%; padding-left:10px;">
                                 <strong><?php echo $data['info']->student_id; ?></strong>
@@ -258,7 +258,7 @@
                             <td colspan='3'></td>
 
                             <td colspan='3'></td>
-                            <td colspan='3' rowspan="3" style="width:72px;">Result</td>
+                            <td colspan='3' rowspan="3" style="width:72px;"></td>
                         </tr>
                         <tr style="border:none; height:30px;">
                             <td rowspan='2' style="width:65px; height:50px;"></td>
@@ -382,7 +382,7 @@
                                 <div class="bar">
                         <?php 
 
-                           $qrdata="DYTT/JULY/2017-18/<".$studentID.">/<MSME".$data['info']->id.">/<".$data["info"]->certificate_no.">/<1 Year Diploma>/<UP30D0013828>/<Regular>/<".$data['info']->name.">/<".$data['info']->fName.">/<".$data['info']->mother_name.">";
+                           $qrdata="DYTT/JULY/2017-18/".$studentID."MSME".$data['info']->id."/".$data["info"]->certificate_no."/1 Year Diploma/UP30D0013828/Regular/".$data['info']->name."/".$data['info']->fName."/".$data['info']->mother_name;
                            QRcode::png ( $qrdata , "test.png ", "L", 5, 0) ;
 
 
