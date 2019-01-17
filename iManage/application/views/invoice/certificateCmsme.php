@@ -73,9 +73,10 @@
         }
 
         table.example-table {
+            border:none;
             clear: both; 
             width: 100%;
-            margin: 30px 0 0 0;
+            margin: 20px 0 0 0;
             
         }
 
@@ -98,7 +99,7 @@
 
         .photo {
             margin-top: 35.5px;
-            margin-left: 554px;
+            margin-left: 510px;
             
             height: 126px;
             width: 105px;
@@ -148,7 +149,7 @@
             width: 120px;
             height: 110px;
             
-            margin-left: 70px;
+            margin-left: 60px;
 
         }
 
@@ -195,7 +196,7 @@
 
                         <td>
                             <div class="photo" >
-                                <img style="width:105px; height:125.5px;" src="<?php echo base_url()?>assets/images/stuImage/<?php echo $data['info']->photo; ?>">
+                                <img style="width:105px; height:125.5px; " src="<?php echo base_url()?>assets/images/stuImage/<?php echo $data['info']->photo; ?>">
                             </div>
                         </td>
 
@@ -251,7 +252,7 @@
 
                 <div class="tbl2">
 
-                    <table class="example-table" id="items" style="height: 305px;">
+                    <table class="example-table" id="items" style="height: 305px;border:none;">
                         <tr style="border:none; height:30px;">
                             <td rowspan='3' style="width:285px;"></td>
                             <td colspan='3'></td>
@@ -369,7 +370,7 @@
                 <div class="footer">
 
 
-                    <table class="example-table" id="items">
+                    <table class="example-table" id="items" style="border:none;">
                         <tr style="height:135px;">
 
                             <td style="width:33%;">
