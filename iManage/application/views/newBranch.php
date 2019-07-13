@@ -25,7 +25,7 @@
                                             </div>
                                             <label for="inputEmail3" class="col-sm-2 control-label">Address Line 2</label>
                                             <div class="col-sm-4">
-                                                <input type="text" name="fname" class="form-control">
+                                                <input type="text" name="address_2" class="form-control">
                                             </div>
                                         </div>
                                         
