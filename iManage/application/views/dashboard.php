@@ -79,6 +79,41 @@
                         </div>
                     </div><!-- Row -->
                     <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel info-box panel-white">
+                                <div class="panel-body">
+                                    <div class="info-box-stats">
+                                        <p class="counter"><?php echo $exp;?></p>
+                                        <span class="info-box-title">Personal Emails</span>
+                                        <a href="http://webmail.niktechsoftware.com/" target="_blank">info@niteducation.ac.in</a>
+                                        <a href="http://webmail.niktechsoftware.com/" target="_blank">contact@niteducation.ac.in</a>
+                                        <a href="http://webmail.niktechsoftware.com/" target="_blank">noreply@niteducation.ac.in</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-lg-3 col-md-6">
+                            <div class="panel info-box panel-white">
+                                <div class="panel-body">
+                                    <div class="info-box-stats">
+                                        <p class="counter">1055<?php //echo $enquiry;?></p>
+                                        <span class="info-box-title">Total Website Visitors</span>
+                                    </div>
+                                    <div class="info-box-icon">
+                                        <i class="icon-eye"></i>
+                                    </div>
+                                    <div class="info-box-progress">
+                                        <div class="progress progress-xs progress-squared bs-n">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-----Row---->
+                    <div class="row">
                         <div class="col-lg-9 col-md-12">
                             <div class="panel panel-white">
                                 <div class="row">
@@ -376,13 +411,13 @@
                 </div><!-- Main Wrapper -->
                 <div class="page-footer">
                     <div class="container">
-                        <p class="no-s">2015 &copy; Modern by Steelcoders.</p>
+                       <strong> Copyright &copy; 2017 <a href="http://niktechsoftware.com/" target="_blank">Niktech Software Solutions.</a> All Rights Reserved.<strong>
                     </div>
                 </div>
             </div><!-- Page Inner -->
         </main><!-- Page Content -->
         <nav class="cd-nav-container" id="cd-nav">
-            <header>
+            <header><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
                 <h3>Navigation</h3>
                 <a href="#0" class="cd-close-nav">Close</a>
             </header>

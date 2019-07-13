@@ -45,11 +45,11 @@
                     <div class="row">
                         <div class="col-md-3 center">
                             <div class="login-box">
-                                <a href="index-2.html" class="logo-name text-lg text-center">NIT Eduction Result Section</a>
-                                <p class="text-center m-t-md">Please prvoid your student-ID for Result</p>
+                                <a href="#" class="logo-name text-lg text-center">NIT Education Result Section</a>
+                                <p class="text-center m-t-md">Please Enter your Roll No. for Result</p>
                                 <form class="m-t-md" action="<?php echo base_url();?>getresult.jsp" method="post">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Student-ID" name="sid" required="required" autocomplete="off"> 
+                                        <input type="text" class="form-control" placeholder="Roll-Number" name="sid" required="required" autocomplete="off"> 
                                     </div>
                                     
                                     <?php if($this->uri->segment(3) == "authFals"){?>

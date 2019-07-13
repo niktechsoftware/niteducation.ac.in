@@ -45,7 +45,15 @@
                         <div class="col-lg-4 col-md-4 col-sm-12  ">
                             <div id="consulty">
                                 <div class="media-left">
-                                      <h2>Facebook</h2>
+                                      <h2>Join Us</h2>
+                                      <ul> <li class="social-media">
+                                            <a href="#" target="_blank"><i class="fa fa-facebook fa-x3"></i></a>
+                                            <a href="#" target="_blank"><i class="fa fa-twitter fa-x3"></i></a>
+                                            <a href="#"><i class="fa fa-instagram fa-x3"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus fa-x3"></i></a>
+                                            <a href="#"><i class="fa fa-rss fa-x3"></i></a>
+                                            <a href="#"><i class="fa fa-youtube fa-x3"></i></a>
+                                        </li></ul>
                                 </div>
                                 
                             </div>
@@ -113,14 +121,7 @@
                                             <a href="#">info@niteducation.ac.in</a><br>
                                             <a href="#">contact@niteducation.ac.in</a>
                                         </li>
-                                        <li class="social-media">
-                                            <a href="#" target="_blank"><i class="fa fa-facebook fa-x3"></i></a>
-                                            <a href="#" target="_blank"><i class="fa fa-twitter fa-x3"></i></a>
-                                            <a href="#"><i class="fa fa-instagram fa-x3"></i></a>
-                                            <a href="#"><i class="fa fa-google-plus fa-x3"></i></a>
-                                            <a href="#"><i class="fa fa-rss fa-x3"></i></a>
-                                            <a href="#"><i class="fa fa-youtube fa-x3"></i></a>
-                                        </li>
+                                      
                                     </ul>
                                 </div>
                             </div>
@@ -136,12 +137,8 @@
                 <div class="container">
                 
                     <div class="row" >
-                   <strong> Copyright @ <a href="#" target="_blank"> 2018</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>
-                <!-- hitwebcounter Code START
-
-<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hit.php?id=gurkcpfp&nd=8&style=24" border="0" alt="web counter"></a>
- -->
-<!-- hitwebcounter.com -->
+                   <strong> Copyright © 2017 <a href="http://niktechsoftware.com/" target="_blank">Niktech Software Solutions.</a> All Rights Reserved.<strong>
+            
                                           
                              
                     </div>
@@ -202,14 +199,14 @@
 	var span = document.getElementsByClassName("close")[0];
 
 	// When the user clicks the button, open the modal 
-	btn.onclick = function() {
-		modal.style.display = "block";
-	}
+	// btn.onclick = function() {
+	// 	modal.style.display = "block";
+	// }
 
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-		modal.style.display = "none";
-	}
+	// // When the user clicks on <span> (x), close the modal
+	// span.onclick = function() {
+	// 	modal.style.display = "none";
+	// }
 
 	// When the user clicks anywhere outside of the modal, close it
 	window.onclick = function(event) {
@@ -236,7 +233,7 @@
 			
 			$('#thumbs').fadeIn(500);
 			$('#image').animate({marginTop:'10px'},200);
-			$(this).hide();
+			//$(this).hide();
 			
 			$('#hide').fadeIn('slow');
 			

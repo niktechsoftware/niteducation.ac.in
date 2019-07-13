@@ -19,8 +19,7 @@
 				background:url("<?php echo base_url(); ?>assets/bcg.jpg");
 				background-size: 100% auto;
 				width: 100%;
-height:100%;
-                               
+				height:100%;                
 				font-size: auto;
 				color:#000;
 			}
@@ -53,51 +52,51 @@ height:100%;
 		
 		
 <div id="printcontent">
-	<div id="page-wrap" style="border: 1px solid #FFF; width:1000px; height:100%">
+	<div id="page-wrap" style="border: 1px solid #FFF; width:940px; height:100%">
 		<table class="example-table" id="items" >
 			<tr style="border: none;">
-				<td style="border: none;"><br></br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php echo $ids->sino;?></strong><br></br><br></br></td>
+				<td style="border: none;"><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php echo $ids->sino;?></strong><br></br><br></br></td>
 				<td style="border: none;"><br></br><br></br><br></br><br></br></td>
 				<td style="border: none;"><br></br><br></br><br></br><br></br></td>
 				
 			</tr>
 			<tr style="border: none;">
-				<td style="border: none;"><br></br><br></br><br></br><br></br></td>
-				<td style="border: none;"><br></br><br></br><br></br><br></br></td>
-				<td style="border: none;"><br></br><br></br><br></br><br></br></td>
+				<td style="border: none;"><br></br></br><br><br></br></td>
+				<td style="border: none;"><br></br></br></br><br></br></td>
+				<td style="border: none;"><br></br></br><br></br></br></td>
 				
 			</tr>
 			<tr style="border: none;">
-				<td style="border: none;" width="35%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo base_url(); ?>assets/images/pmgdisha/<?php echo $ids->student_image;?>" alt=""  height="120" width="137"/>
-<img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=E7E1F7&amp;data=Course On Computer Concept- PMGDISHA Duration- 30 days Grade- 'A' Name- 
-<?php echo $ids->name;?> Father Name- <?php echo $ids->fname;?> Mother Name- <?php echo $ids->mother_name;?> Aadhar No- <?php echo $ids->aadhar_number;?> Roll No/Sr. No- <?php echo $ids->sino;?>&amp;qzone=1&amp;margin=0&amp;size=140x140&amp;ecc=H" alt="<?php echo $ids->sino;?>" style="border: none; padding-left: 38px;"/>
-</td>
+				<td style="border: none;" width="35%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo base_url(); ?>assets/images/pmgdisha/<?php echo $ids->student_image;?>" alt=""  height="125" width="125"/>
+				<img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=E7E1F7&amp;data=Course On Computer Concept- PMGDISHA Duration- 30 days Grade- 'A' Name- 
+				<?php echo $ids->name;?> Father Name- <?php echo $ids->fname;?> Mother Name- <?php echo $ids->mother_name;?> Aadhar No- <?php echo $ids->aadhar_number;?> Roll No/Sr. No- <?php echo $ids->sino;?>&amp;qzone=1&amp;margin=0&amp;size=128x128&amp;ecc=H" alt="<?php echo $ids->sino;?>" style="border: none; padding-left: 38px;"/>
+				</td>
 			
 				
 			</tr>
 			
 			<tr style="border: none;">
 				
-<td style="border: none;height:247px"></td>
-				<td style="border: none;">
-					<h3 style="padding-top:24px;"><?php echo $ids->aadhar_number;?></h3>
-					<h3 style="padding-top:22px;"><?php echo $ids->name;?></h3>
-					<h3 style="padding-top:21px;"><?php echo $ids->mother_name;?>
-					<h3 style="padding-top:21px;"><?php echo $ids->fname;?></h3>
-					<h3 style="padding-top:22px;"><?php echo $ids->gaurdian_name;?></h3>
+<td style="border: none;"></td>
+				<td style="border:none; height:200px">
+					<h3 style="padding-top:3px;"><?php echo $ids->aadhar_number;?></h3>
+					<h3 style="padding-top:14px;"><?php echo $ids->name;?></h3>
+					<h3 style="padding-top:18px;"><?php echo $ids->mother_name;?>
+					<h3 style="padding-top:19px;"><?php echo $ids->fname;?></h3>
+					<h3 style="padding-top:20px;"><?php echo $ids->gaurdian_name;?></h3>
 				</td>
 				<td style="border: none;"><br></br><br></br><br></br><br></br></td>
 				
 			</tr>
 			<tr style="border: none;">
-				<td style="border: none;"><br></br><br></br><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $ids->year;?></h3><br></br><br></br><br></td>
+				<td style="border: none;"><br><br></br><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $ids->year;?></h3><br></br><br></br><br></td>
 				 
 				<td style="border: none;"><br></br><br></br><br></br><br></br></td>
 				<td style="border: none;"><br></br><br></br><br></br><br></br></td>
 				
 			</tr>
 			<tr style="border: none;">
-				<td style="border: none;"><br></br><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $ids->year;?></h3><br></br><br></br><br></br></td>
+				<td style="border: none;"></br><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $ids->year;?></h3><br></br><br><br></br><br></br></td>
 				<td style="border: none;"><br></br><br></br><br></br><br></br></td>
 				<td style="border: none;"><br></br><br></br><br></br><br></br></td>
 				
@@ -118,7 +117,7 @@ height:100%;
 			
 			<tr style="border: none;">
 				<td style="border: none;">
-					 <br></br><br></br>
+					 <br></br><br>
 				</td>
 				<td style="border: none;">
 					<br></br>
@@ -127,7 +126,7 @@ height:100%;
 			</tr>
                                <tr style="border: none;">
 				<td style="border: none;">
-					 <br></br><br></br>
+					 </br></br>
 				</td>
 				
 			</tr>

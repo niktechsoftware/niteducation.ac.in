@@ -6,6 +6,8 @@
                             	<div class="panel-body">
                                    <div class="table-responsive">
                                     <table id="printcontent" class="display table" style="width: 100%; cellspacing: 0; font-size:10px;">
+                                        <!--<table id="example" class="display table" style="width: 100%; cellspacing: 0;">-->
+ 
                                         <thead>
                                             <tr>
                                             	<th>#</th>

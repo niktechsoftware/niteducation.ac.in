@@ -18,7 +18,7 @@
                                 </form>
                                 </br>
                                 </br>
-                                <?php if(($grtid!=0)&&($grtid!=2)){?>
+                                <?php if(($grtid!=0)&&($grtid!=2)&&($grtid!=0)){?>
                                    <form class="form-horizontal" action="<?php echo base_url()?>allform/editSaveRegisterp" method="post" enctype="multipart/form-data">  
                                        <input class="form-control" type="hidden" name="student_id"  value = "<?php echo $grtid1->student_id;?>" >
                                       <div class="form-group">

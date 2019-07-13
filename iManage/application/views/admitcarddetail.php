@@ -62,12 +62,12 @@
                         			<td colspan="4" align="center">
                         				<h2 style="margin:0px;"><img src="<?= base_url()?>assets/msme-logo.png" width="100" >MINISTRY OF MICRO, SMALL & MEDIUM ENTERPRISES</h2>
                         				<h3 style="margin:0px;">GOVERNMENT OF INDIA</h3>
-                        				<h4>PROVISIONAL ADMIT CARD - EXAM 2017-18</h4>
+                        				<h4>PROVISIONAL ADMIT CARD - EXAM MARCH - (2018-19)</h4>
                         			</td>
                         		</tr>
                         		<tr>
-                        			<td colspan="2">NAME OF THE CANDIDATE: <?= $info->name; ?></td>
-                        			<td colspan="2">FATHER/HUSBAND NAME: <?= $info->fName; ?></td>
+                        			<td colspan="2">NAME OF THE CANDIDATE: <?= strtoupper($info->name); ?></td>
+                        			<td colspan="2">FATHER/HUSBAND NAME: <?= strtoupper($info->fName); ?></td>
                         		</tr>
                         		<tr>
                         			<td width="40%">ROLL NO: <?= $info->student_id; ?></td>
@@ -92,7 +92,7 @@
                         		</tr>
                         		<tr>
                         			<td>INSTITUTE OF STUDYING: UP30D0013828-NATIONAL INSTITUTE OF TECHNOLOGIES AAMGHAT SUBHASH NAGAR GHAZIPUR</td>
-                        			<td>CENTER OF EXAMINATION: Samrat Ashok Inter College HathiKhana Adarsh Gaon Ghazipur</td>
+                        			<td>CENTER OF EXAMINATION: Radhika Devi Purva Madhyamik Vidyalaya Ravindrapuri, Gorabazar, Ghazipur</td>
                         			<td>INSTITUTE'S SIGNATURE: </td>
                         		</tr>
                         		<tr>
@@ -107,7 +107,7 @@
                         		</tr>
                         	</table>
                         	<br/>
-                        	<strong>परीक्षा दिन एवं तिथि:</strong> १९ अगस्त २०१८, रविवार
+                        	<strong>परीक्षा दिन एवं तिथि:</strong> रविवार, 07 April 2019
                         	<br/>
                         	<table border="1" width="100%">
                         	    <tr>
