@@ -86,7 +86,7 @@ body{
                        <img src="<?php echo base_url();?>assets/images/slider1.jpg" alt="New York" width="1200" height="700">
                     </div>
                     
-                                        <div class="item">
+                     <div class="item">
                        <img src="<?php echo base_url();?>assets/uploads/banner2.jpg" alt="New York" width="1200" height="700">
                     </div>
                                         <div class="item">

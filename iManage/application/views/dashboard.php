@@ -28,7 +28,7 @@
                                         <span class="info-box-title">Total Enquiry</span>
                                     </div>
                                     <div class="info-box-icon">
-                                        <i class="icon-eye"></i>
+                                        <i class="icon-envelope"></i>
                                     </div>
                                     <div class="info-box-progress">
                                         <div class="progress progress-xs progress-squared bs-n">
@@ -66,7 +66,7 @@
                                         <span class="info-box-title">Todays Expenses</span>
                                     </div>
                                     <div class="info-box-icon">
-                                        <i class="icon-envelope"></i>
+                                        <i class="icon-basket"></i>
                                     </div>
                                     <div class="info-box-progress">
                                         <div class="progress progress-xs progress-squared bs-n">
@@ -77,7 +77,81 @@
                                 </div>
                             </div>
                         </div>
+
                     </div><!-- Row -->
+                        <div class="row">  <div class="col-lg-3 col-md-6">
+                            <div class="panel info-box panel-white">
+                                <div class="panel-body">
+                                    <div class="info-box-stats">
+                                      <a href="<?php echo base_url();?>apanel/showcourse"> <p class="counter"><?php echo $course;?></p></a>
+                                        <span class="info-box-title">Total Course</span>
+                                    </div>
+                                    <div class="info-box-icon">
+                                        <i class="icon-eye"></i>
+                                    </div>
+                                    <div class="info-box-progress">
+                                        <div class="progress progress-xs progress-squared bs-n">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="row">  <div class="col-lg-3 col-md-6">
+                            <div class="panel info-box panel-white">
+                                <div class="panel-body">
+                                    <div class="info-box-stats">
+
+                                        <?php
+                                         $d=date('Y-m-d');
+                             
+                     $cm=  date("m",strtotime($d));
+                     $cd=  date("d",strtotime($d));
+
+              if( $birthday->num_rows() > 0)
+                {
+                $gal1 = $birthday->result();
+                $h=0;
+                 foreach($gal1 as $gal):
+                    
+                $sdate = $gal->dob; 
+                $sm=  date("m",strtotime($sdate));
+                 $sd=  date("d",strtotime($sdate));
+                    
+                  if($sm==$cm && $sd==$cd){
+                $h++;
+                 if($h>0){
+                ?>
+
+                      <a href="<?php echo base_url();?>apanel/bdaydetail"><p class="counter"><?php echo COUNT($sdate);?></p>
+        <?php  }
+
+         }
+
+              endforeach;}
+
+                                        ?>
+
+
+                                      
+                                        <span class="info-box-title">Today Birthday</span>
+                                    </div>
+                                    <div class="info-box-icon">
+                                        <i class="icon-eye"></i>
+                                    </div>
+                                    <div class="info-box-progress">
+                                        <div class="progress progress-xs progress-squared bs-n">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div>
+
+
+
                     <div class="row">
                         <div class="col-lg-9 col-md-12">
                             <div class="panel panel-white">

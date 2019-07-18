@@ -136,12 +136,17 @@
                 <div class="container">
                 
                     <div class="row" >
-                   <strong> Copyright @ <a href="#" target="_blank"> 2018</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>
+                   <strong> Copyright @ <a href="#" target="_blank"> 2018 All Rights Reserved</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>
                 <!-- hitwebcounter Code START
 
 <a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hit.php?id=gurkcpfp&nd=8&style=24" border="0" alt="web counter"></a>
  -->
-<!-- hitwebcounter.com -->
+<!-- hitwebcounter.com -->    <center>    <h4 style="color:white;">Visitor Counter</h4>
+
+<a href="http://www.hitwebcounter.com" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=7118241&style=0019&nbdigits=5&type=page&initCount=25000" title="webs counters" Alt="webs counters"   border="0" >
+</a> </center>
+
                                           
                              
                     </div>

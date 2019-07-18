@@ -208,10 +208,35 @@ class student_info extends CI_Model{
 	}
 	function todays_collection(){
 		$date1=date('Y-m-d');
-		
 	
 		$collection = $this->db->query("SELECT SUM(amount) as totday FROM day_book WHERE pay_date='$date1' and 	dabit_cradit='credit' ")->row();
 		return $collection->totday;
+	}
+
+	function birthday()
+	{
+
+                    $d=date('Y-m-d');
+                             
+   					 $cm=  date("m",strtotime($d));
+   					 $cd=  date("d",strtotime($d));
+   					
+   				 $gal =	 $this->db->get("student_info");
+                          	 
+				
+   			 return $gal;
+	
+		
+
+	}
+
+	function totalcourse()
+	{
+		//$this->db->where("status","pending");
+		$approved = $this->db->get("courses");
+		$course = $approved->num_rows();
+		return $course;
+
 	}
 	
 	function todays_expenses(){
