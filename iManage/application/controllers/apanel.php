@@ -56,7 +56,9 @@ class Apanel extends CI_Controller{
 		$data['approved']=$this->student_info->total_registrationa();
 		$data['enquiry']=$this->student_info->total_Enquiry();
 		$data['collection']=$this->student_info->todays_collection();
+		$data['course']=$this->student_info->totalcourse();
 		$data['exp']=$this->student_info->todays_expenses();
+		$data['birthday']=$this->student_info->birthday();
 		$data['title'] = 'NIT EDUCATION | Dashboard';
 		$data['headerCss'] = 'headerCss/dashboardCss';
 		$data['footerJs'] = 'footerJs/dashboardJs';
@@ -302,12 +304,26 @@ class Apanel extends CI_Controller{
 		$data['footerJs'] = "footerJs/studentListJs";
 		$this->load->view("include/template",$data);
 	}
+
+	public function showcourse()
+	{
+
+		$data['subPage'] = 'Show Courses';
+		$data['title'] = "Show Courses";
+		$data['smallTitle'] = "Show Courses";
+		$data['pageTitle'] = "course List";
+		$data['mainContent'] = "showcourse";
+		$data['headerCss'] = "headerCss/studentListCss";
+		$data['footerJs'] = "footerJs/studentListJs";
+		$this->load->view("include/template",$data);
+	
+
+	}
 	
 	
 	
 	function inquiry(){
 		$data['res'] = $this->inquiry->getAll();
-		
 		$data['subPage'] = 'Website';
 		$data['title'] = "Enquiry";
 		$data['smallTitle'] = "Enquiry";
@@ -468,6 +484,19 @@ class Apanel extends CI_Controller{
 		$data['headerCss'] = "headerCss/studentRegisterCss";
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
+	}
+
+	public function bdaydetail()
+	{
+
+			$data['subPage'] = 'Birthday';
+		$data['title'] = "Birthday Student";
+		$data['smallTitle'] = "Birthdays";
+		$data['pageTitle'] = "Birthday";
+		$data['mainContent'] = "bdaydetail";
+		$data['headerCss'] = "headerCss/studentRegisterCss";
+		$data['footerJs'] = "footerJs/studentRegisterJs";
+		$this->load->view("include/template",$data);		
 	}
 	
 	public function studymeterial(){

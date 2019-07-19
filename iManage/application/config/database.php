@@ -52,10 +52,10 @@ $db['default']['hostname'] = 'localhost';
 
 //$db['default']['username'] = 'root';
 //$db['default']['password'] = '';
-//$db['default']['database'] = 'nite';
+//$db['default']['database'] = 'nit';
 
 $db['default']['username'] = 'gfincuct_nitedu';
-$db['default']['password'] = 'rahul!123singh';
+ $db['default']['password'] = 'rahul!123singh';
 $db['default']['database'] = 'gfincuct_nitedu';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

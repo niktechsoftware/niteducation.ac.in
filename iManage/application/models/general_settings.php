@@ -25,10 +25,11 @@
 					"doctor_name_1" => $this->input->post("doctor_name_1"),
 					"doctor_name_2" => $this->input->post("doctor_name_2"),
 					"doctor_name_3" => $this->input->post("doctor_name_3"),
-					"doctor_name_4" => $this->input->post("doctoe_name_4"),
+					"doctor_name_4" => $this->input->post("doctor_name_4"),
 					"image"=> $logo,
 					"logo"=> $image,
-					"clinic_id" => $newId
+					"clinic_id" => $newId,
+					"created" =>date('Y-m-d')
 			);
 			if(strlen($_FILES['image']['name']) > 0):
 				$photo_name = time().trim($_FILES['image']['name']);
@@ -92,7 +93,7 @@
 			@chmod("assets/images/docImg/" . $old_img, 0777);
 			@unlink("assets/images/docImg" . $old_img);
 		
-			if($query = $this->updateImage($new_img,$id)){
+			if($query = $this->updateInfo($new_img,$id)){
 				$this->load->library('upload');
 				// Set configuration array for uploaded photo.
 				$image_path = realpath(APPPATH . '../assets/images/docImg');
@@ -121,7 +122,7 @@
 			@chmod("assets/images/docImg/" . $old_img, 0777);
 			@unlink("assets/images/docImg/" . $old_img);
 		
-			if($query = $this->updateImag($new_img,$id)){
+			if($query = $this->updateInfo($new_img,$id)){
 				$this->load->library('upload');
 				// Set configuration array for uploaded photo.
 				$image_path = realpath(APPPATH . '../assets/images/docImg');
@@ -160,7 +161,7 @@
 					"doctor_name_1" => $this->input->post("doctor_name_1"),
 					"doctor_name_2" => $this->input->post("doctor_name_2"),
 					"doctor_name_3" => $this->input->post("doctor_name_3"),
-					"doctor_name_4" => $this->input->post("doctoe_name_4")
+					"doctor_name_4" => $this->input->post("doctor_name_4")
 			);
 				
 			$this->db->where("clinic_id",$id);

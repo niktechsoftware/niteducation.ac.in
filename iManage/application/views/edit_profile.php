@@ -108,11 +108,13 @@
                                         <div class="form-group">
                                             <label for="inputEmail3" class="col-sm-2 control-label">Browse Your's image (120 KB Max.)</label>
                                             <div class="col-sm-4">
+                                                <img src="<?php echo base_url();?>/assets/images/docImg/<?php echo $info->image;?>" width="100px;" height="100px;">
                                                 <input type="hidden" name="old_image" value="<?php echo $info->image;?>" >
                                                 <input type="file" name="image" class="form-control">
                                             </div>
                                             <label for="inputEmail3" class="col-sm-2 control-label">Browse Clinic Logo (100 KB Max.)</label>
                                             <div class="col-sm-4">
+                                                <img src="<?php echo base_url();?>/assets/images/docImg/<?php echo $info->logo;?>" width="100px;" height="100px;">
                                             	<input type="hidden" name="old_logo" value="<?php echo $info->logo;?>" >
                                                 <input type="file" name="logo" class="form-control" />
                                             </div>

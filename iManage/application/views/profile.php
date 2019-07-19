@@ -12,7 +12,7 @@ $profile = $this->db->get("general_settings")->row();
                         <div class="col-md-12">
                             <div class="panel panel-white">
                                 <div class="panel-body">
-                                    <form class="form-horizontal" action="<?php echo base_url()?>allform/editProfile.jsp" method="post">
+                                    <form class="form-horizontal" action="<?php echo base_url()?>allform/editProfile.jsp" method="post" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label for="inputEmail3" class="col-sm-2 control-label">Branch Name </label>
                                             <div class="col-sm-4">
@@ -240,7 +240,9 @@ $profile = $this->db->get("general_settings")->row();
                                                 	<strong>
                                                 		<?php 
                                                 			if(strlen($profile->image) > 0){
-                                                				echo $profile->image;
+																
+															?> <img src="<?php echo base_url().'/assets/images/docImg/'.$profile->image;?>"width="100px;" height="100px;">;
+															<?php
                                                 			}
                                                 			else{ 
                                                 				echo "N/A";
@@ -254,9 +256,10 @@ $profile = $this->db->get("general_settings")->row();
                                                 <label>
                                                 	<strong>
                                                 		<?php 
-                                                			if(strlen($profile->logo) > 0){
-                                                				echo $profile->logo;
-                                                			}
+                                                			if(strlen($profile->logo) > 0){?>
+															<img src="<?php echo base_url().'/assets/images/docImg/'.$profile->logo;?>" width="100px;" height="100px;">;
+                                                				
+                                                		<?php	}
                                                 			else{ 
                                                 				echo "N/A";
                                                 			} 
