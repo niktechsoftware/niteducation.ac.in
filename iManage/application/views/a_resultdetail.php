@@ -57,14 +57,17 @@
             <div class="page-inner">
                 <div id="main-wrapper">
                     <div class="row" id="printcontent">
-                        <div class="col-md-8 center">
-                            <table border="1" width="100%">
-                        		<tr style="border-bottom: 0px solid #FFF;">
+                        <div class="col-md-8 center table-responsive">
+                            <table border="1" class=" table table-hover" width="100%">
+                        		<tr style="border-bottom: 0px solid #FFF; background: #e5952d; color:white;">
                         			<td colspan="10" align="center">
                         				<h3 style="margin:0px;"><img src="<?= base_url()?>assets/msme-logo.png" width="100" >MINISTRY OF MICRO, SMALL & MEDIUM ENTERPRISES</h3>
                         				<h3 style="margin-top:-20px;margin-bottom:25px;">GOVERNMENT OF INDIA NEW DELHI</h3>
                         				<h4 style="margin-bottom:10px;">PROVISIONAL MARKSHEET CUM CERTIFICATE</h4>
-                        				<h4>योग शिक्षक प्रशिक्षण परीक्षा - JULY (2017-18) </h4>
+                        				<?php if(strlen($this->input->post('sid'))==4){?>
+                        				<h4>योग शिक्षक प्रशिक्षण परीक्षा - JULY (2017-18 ) </h4>
+                        			<?php }else{ ?>
+                        			<h4>योग शिक्षक प्रशिक्षण परीक्षा - MARCH (2018-19 ) </h4><?php }?>
                         			</td>
                         		</tr>
                         		<tr style="border: 0px solid #FFF;">
@@ -84,13 +87,13 @@
                         				<u>MARKS OBTAINED</u>
                         			</td>
                         		</tr>
-                        		<tr>
+                        		<tr style="background: #a1d657;">
                         			<td align="center" rowspan='3' style="font-weight:bold;">विषय</td>
                         			<td align="center" colspan='3' style="font-weight:bold;">पूर्णांक</td>
                         			<td align="center" colspan='3' style="font-weight:bold;">उत्तीर्णांक</td>
                         			<td align="center" colspan='3' style="font-weight:bold;">प्राप्तांक</td>
                         		</tr>
-                        		<tr>
+                        		<tr style="background: #a1d657;">
                         			<td align="center" rowspan='2'>लिखित</td>
                         			<td align="center" colspan='2'>प्रायोगिक</td>
                         			<td align="center" rowspan='2'>लिखित</td>
@@ -98,7 +101,7 @@
                         			<td align="center" rowspan='2'>लिखित</td>
                         			<td align="center" colspan='2'>प्रायोगिक</td>
                         		</tr>
-                        		<tr>
+                        		<tr style="background: #a1d657;">
                         			<td align="center" style="font-weight:bold;">बाह्य</td>
                         			<td align="center" style="font-weight:bold;">आंतरिक</td>
                         			<td align="center" style="font-weight:bold;">बाह्य</td>
@@ -139,24 +142,35 @@
                             		                
                             		            if($value->s_id == 6)
                             		                echo '<td align="center">-</td><td align="center">'.$value->marks_obtain.'</td><td align="center">'.$result[6]->marks_obtain.'</td>';
+                            		     
+                            		         
                             		      endif;
                             		      $totalMarks += $value->marks_obtain;
                                     endforeach;
+                                    $fail="250";
+                                    $first="400";
+                                    $second="350";
+                                    $third="250";
                         		?>
-                        		<tr style="border: 0px solid #FFF;">
-                        			<td colspan="5" style="padding-left:50px;padding-top:30px;"><strong>RESULT:</strong> PASS</td>
+                        		<tr style="border: 0px solid #FFF;     background: #baceff;">
+                        			<td colspan="5" style="padding-left:50px;padding-top:30px;"><strong>RESULT:</strong> <?php if($totalMarks>$fail){echo "PASS";}else{echo "FAIL";}?></td>
                         			<td colspan="5" style="border: 0px solid #FFF;padding-top:30px;"><strong>MARKS OBTAINED:</strong> <?= $totalMarks; ?></td>
                         		</tr>
-                        		<tr style="border: 0px solid #FFF;">
-                        			<td colspan="5" style="padding-left:50px;"><strong>DIVISION:</strong> FIRST</td>
+                        		<tr style="border: 0px solid #FFF;    background: #ffe0f1;">
+                        			<td colspan="5" style="padding-left:50px;"><strong>DIVISION:</strong><?php if($totalMarks>=$first){echo "FIRST";}elseif($totalMarks>$second && $totalMarks<$third){echo "SECOND";}elseif($totalMarks>$third){echo"THIRD";}else{"FAIL";}?> </td>
                         			<td colspan="5" style="border: 0px solid #FFF;"><strong>TOTAL MARKS:</strong> 500</td>
                         		</tr style="border: 0px solid #FFF;">
-                        		<tr style="border: 0px solid #FFF;">
+                        		<tr style="border: 0px solid #FFF;     background: #ffff99;">
                         			<td colspan="5" style="padding-left:50px;padding-top:30px;">&nbsp;</td>
                         			<td colspan="5" style="border: 0px solid #FFF;padding-top:30px;"><strong>CONTROLLER OF EXAMINATION</strong></td>
                         		</tr>
-                        		<tr style="border: 0px solid #FFF;">
-                        			<td colspan="5" style="padding-left:50px;padding-top:30px;"><strong>DECLARE DATE:<strong> 27/10/2018</td>
+                        		<tr style="border: 0px solid #FFF;  background: #ffff99;    ">
+                        		    	<?php if(strlen($this->input->post('sid'))==4){?>
+                        			                        			<td colspan="5" style="padding-left:50px;padding-top:30px;"><strong>DECLARE DATE:<strong>27/10/2018</td>
+	<?php }else{ ?>
+                        			                        			<td colspan="5" style="padding-left:50px;padding-top:30px;"><strong>DECLARE DATE:<strong>31/05/2019</td>
+<?php }?>
+
                         			<td colspan="5" style="border: 0px solid #FFF;padding-top:30px;">&nbsp;</td>
                         		</tr>
                         		<tr style="border: 0px solid #FFF;">

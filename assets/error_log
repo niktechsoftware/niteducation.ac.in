@@ -1,0 +1,10 @@
+[22-Jun-2019 03:08:54 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/niteducation.ac.in/assets/wp-round.php on line 11
+[22-Jun-2019 03:08:54 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/niteducation.ac.in/assets/wp-round.php on line 11
+[24-Jun-2019 00:39:23 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[24-Jun-2019 00:39:24 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/assets/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[24-Jun-2019 00:41:43 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[24-Jun-2019 00:41:43 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/assets/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[24-Jun-2019 00:44:42 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[24-Jun-2019 00:44:42 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/assets/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[24-Jun-2019 00:45:44 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[24-Jun-2019 00:45:44 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/assets/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0

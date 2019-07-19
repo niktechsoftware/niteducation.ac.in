@@ -48,17 +48,13 @@
         @page {
             margin: 0;
         }
-
-
         @media print {
             body * {
                 visibility: visible;
             }
-
             #printcontent * {
                 visibility: visible;
             }
-
             #printcontent {
                 position: absolute;
                 top: -26px;
@@ -66,12 +62,10 @@
                 min-height: 8.7cm;
                 visibility: visible;
             }
-
             #printNot {
                 display: none;
             }
         }
-
         table.example-table {
             border:none;
             clear: both; 
@@ -79,14 +73,11 @@
             margin: 20px 0 0 0;
             
         }
-
         .fdiv {
             background: url("<?php echo base_url(); ?>assets/msme.jpg");
             background-size: 100% auto;
-
-
+            
         }
-
         .sn {
             margin-top: 20px;
             margin-left: 122px;
@@ -96,71 +87,49 @@
             float: left;
             
         }
-
         .photo {
             margin-top: 35.5px;
             margin-left: 510px;
             
             height: 126px;
             width: 105px;
-
-
-
         }
-
         .tbl1 {
             margin-top: 260px;
             width: 78%;
             margin-left: 95px;
             text-align: center;
-
         }
-
         .title {
-
-
             width: 97%;
             margin-left: auto;
             margin-right: auto;
         }
-
         .tbl2 {
-
             width: 79%;
             margin-left: 100px;
             height: 305px;
             text-align: center;
-
         }
-
         .footer {
             margin-top: 130px;
             width: 82%;
             margin-left: 110px;
         }
-
         .dt {
-
             margin-left: 120px;
             margin-top: -40px;
         }
-
         .bar {
             width: 120px;
             height: 110px;
             
             margin-left: 60px;
-
         }
-
-
         .exami {
-
             margin-top: -60px;
-
             margin-left: 20px;
         }
-
     </style>
 
 
@@ -170,8 +139,6 @@
     <?php
    include "phpqrcode/qrlib.php";
    // QRcode::png("MY FIRST PHP QR CODE GENERATOR EXAMPLE") ; 
-
-
    
         $studentID=$stu_id;
     $this->db->where('student_id',$studentID);
@@ -287,7 +254,6 @@
                                    foreach ($data['result'] as $key => $value)
                                    {
                                     $totalMarks += $value->marks_obtain;
-
                                    }
                                    $div=1;
                                    $percent=$totalMarks/5;
@@ -317,11 +283,8 @@
                                                 if($value->s_id == 6)
                                                     echo '<td></td><td><strong>'.$value->marks_obtain.'</strong></td><td><strong>'.$data['result'][6]->marks_obtain.'</strong></td>';
                                                 
-
-
                                                 if($counter == 1)
                                                 {
-
                                                     if($percent<50)
                                                            {
                                                                echo "<td colspan='2'><strong>Failed</strong></td>";
@@ -353,13 +316,11 @@
                                                              {
                                                                echo "<td colspan='2'><strong>I DIV</strong></td>";
                                                              }
-
                                                     }
                                                 if($counter == 5)
                                                     echo "<td colspan='2'><strong>".$percent."</strong></td>";
                                                 
                                                 $counter++;
-
                                           endif;
                                           
                                     endforeach;
@@ -380,14 +341,8 @@
 
                             <td style="width:33%;">
                                 <div class="bar">
-                        <?php 
-
-                           $qrdata="DYTT/JULY/2017-18/".$studentID."MSME".$data['info']->id."/".$data["info"]->certificate_no."/1 Year Diploma/UP30D0013828/Regular/".$data['info']->name."/".$data['info']->fName."/".$data['info']->mother_name;
-                           QRcode::png ( $qrdata , "test.png ", "L", 5, 0) ;
-
-
-                        ?>
-                           <img src="<?php echo base_url();?>test.png" width="120px" height="110px"/>
+                        
+                           <img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=E7E1F7&amp;data=DYTT/JULY/2017-18/<?php echo $studentID; ?>/MSME<?php echo $data['info']->id; ?>/<?php echo $data["info"]->certificate_no;?>/1 Year Diploma/UP30D0013828/Regular/<?php echo $data['info']->name; ?>/<?php echo $data['info']->fName; ?>/<?php echo $data['info']->mother_name; ?>/niteducation.ac.in&amp;qzone=1&amp;margin=0&amp;size=120x120&amp;ecc=H" alt="Yoga Certificate" style="border: none; "/> 
                            
                             </td>
 

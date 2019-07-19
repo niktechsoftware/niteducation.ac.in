@@ -1,5 +1,5 @@
 <?php
-$lang['copy_right']='2017 - 18 &copy; National Institute Of Technologies Education <br/> Powered <a href="http://niktechsoftware.com" target="_blank">Niktech Software Solutions.</a>';
+$lang['copy_right']='2017 - 18 &copy; National Institute Of Technologies Education <br/> Powered by <a href="http://niktechsoftware.com" target="_blank">Niktech Software Solutions.</a>';
 $lang['login_title']='Nit Education Admin Login';
 $lang['forgot'] = 'Login - Forgot Password';
 $lang['iName'] = 'NIT EDUCATION';

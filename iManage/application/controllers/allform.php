@@ -72,24 +72,19 @@ class AllForm extends CI_Controller{
 		
 	}
 	public function savepmgdisha(){
-		
-		
-		
-		
 		$string = time().trim($_FILES['cphoto']['name']);
 		$photo_name = str_replace(' ', '', $string);
 		$data=array(
 				'name'=>$this->input->post("title"),
-'sino'=>$this->input->post("sino"),
-'aadhar_number'=>$this->input->post("aadhar_number"),
-'name'=>$this->input->post("name"),
-'fname'=>$this->input->post("fname"),
-'mother_name'=>$this->input->post("mother_name"),
-'gaurdian_name'=>$this->input->post("gaurdian_name"),
-'mobile1'=>$this->input->post("mobile1"),
-'mobile2'=>$this->input->post("mobile2"),
-'year'=>$this->input->post("year"),
-				
+				'sino'=>$this->input->post("sino"),
+				'aadhar_number'=>$this->input->post("aadhar_number"),
+				'name'=>$this->input->post("name"),
+				'fname'=>$this->input->post("fname"),
+				'mother_name'=>$this->input->post("mother_name"),
+				'gaurdian_name'=>$this->input->post("gaurdian_name"),
+				'mobile1'=>$this->input->post("mobile1"),
+				'mobile2'=>$this->input->post("mobile2"),
+				'year'=>$this->input->post("year"),
 				'student_image'=>$photo_name,
 				'status'=>"pending",
 				
@@ -359,6 +354,43 @@ class AllForm extends CI_Controller{
 		redirect("apanel/studentEdit/$student_id");
 	}
 	}
+
+		public function editSave_web_Register(){
+		$student_id = $this->input->post('student_id');
+		$photo_name = time().trim($_FILES['studentImage']['name']);
+		//$signature =time().trim($_FILES['signature']['name']);
+		$web_data = array(
+				"name" => $this->input->post("name"),
+				"fName" => $this->input->post("fname"),
+				"address" => $this->input->post("address"),
+				"city" => $this->input->post("city"),
+				"state" => $this->input->post("state"),
+				"pin" => $this->input->post("pin"),
+				"mobile" => $this->input->post("mobile"),
+				"mother_name"=>$this->input->post("mother_name"),
+				"aadhar_number"=>$this->input->post("aadhar_number"),
+				"dob" => date("Y-m-d", strtotime($this->input->post("dob"))),
+				"heighQ" => $this->input->post("heighQ"),
+				"courseApplied" => $this->input->post("courseApplied"),
+				"timing" => $this->input->post("timing"),
+				"gender" => $this->input->post("gender"),
+				"pay_amount" => $this->input->post("total_fee"),
+				"num_of_install" => $this->input->post("numofinstall"),
+				"type_of_install" => $this->input->post("toi"),
+				"fee_method" => $this->input->post("fee_method"),
+				"branch_id" => $this->input->post("branchId"),
+				"branch_no" => $this->input->post("branchNo"),
+				"remark"=>$this->input->post("remark"),
+				//"remark"=>$this->input->post("remark"),
+				"certificate_no"=>$this->input->post("certificate_no"),
+				"sr_no"=>$this->input->post("sr_no"),
+		);
+		$this->load->model("student_info");
+		if($query = $this->student_info->updatewebStudentInfo($web_data,$student_id)){
+			
+		redirect("apanel/studentwebEdit/$student_id");
+		}
+	}
 	
 	public function noticeBoard(){
 	
@@ -511,6 +543,16 @@ class AllForm extends CI_Controller{
 			echo "Somthing going wrong. Please Contact Site administrator";
 		}
 	}
+
+	public function deletewebStudents(){
+		$this->db->where("student_id",$this->uri->segment(3));
+		if($this->db->delete("web_student_requ")){
+			redirect("apanel/olr");
+		}
+		else{
+			echo "Somthing going wrong. Please Contact Site administrator";
+		}
+	}
 //------------------------------------------------------------------------------------------------------------------------------
 	public function saveExpenseList(){
 		$data = array(
@@ -607,9 +649,9 @@ public function deleteStudent(){
 			
 				$total = $this->db->query("SELECT SUM(paid_amount) as totalpaid from cal_paid_fee WHERE student_id = '$stuid_id'")->row(); 
 			    $op1 = $this->db->query("select closing_balance from opening_closing_balance where opening_date='".date('Y-m-d')."'")->row();
-			$balance = $op1->closing_balance;
-			$close1 = $balance - $total->totalpaid;
-					$bal = array(
+				$balance = $op1->closing_balance;
+				$close1 = $balance - $total->totalpaid;
+				$bal = array(
 					"closing_balance" => $close1
 			);
 		    
@@ -632,23 +674,19 @@ public function deleteStudent(){
 				$c = $this->day_book->insert($dayBook);
 				$this->db->where("student_id",$stuid_id);
 				$this->db->delete("student_info");
-					$this->db->where("student_id",$stuid_id);
-					
+				$this->db->where("student_id",$stuid_id);	
 				$this->db->delete("cal_paid_fee");
 				
 				?>
 				alert('Record Modified!',0);
-				window.location=history.go(-2);
-				
-				
+				window.location=history.go(-1);
+					
+					
 			   
-			}</script>
+			}
+		</script>
 
 		<?php 
-		
-			
-		
-		
 	}
 	
 	function addedStudent(){
@@ -661,8 +699,9 @@ public function deleteStudent(){
 		$rty = $this->db->get("web_student_requ")->row();
 		$this->db->where("id",$rty->courseApplied);
 		$rtyu=$this->db->get("courses")->row();
-		 $id = $this->db->query("SELECT id From student_info order by id DESC Limit 1")->row()->id;
-				$id = 1000 + $id+1;
+		$id = $this->db->query("SELECT id From student_info order by id DESC Limit 1")->row()->id;
+		$id = 1000 + $id+1;
+		$id = "ONNIT".$id;
 			$data = array(
 				"student_id" => $id,
 				"name" => $rty->name,
@@ -689,12 +728,13 @@ public function deleteStudent(){
 				"joinTime" => date("H:i:s"),
 				"branch_id" => $rty->branch_id,
 				"branch_no" => $rty->branch_no,
-				"remark"=>$rty->remark
+				"remark"=>$rty->remark,
+				"isApprove"=>"Yes"
 				
 			);
 			$courseCode = $rty->courseApplied;
 			$this->db->where("id",$courseCode);
-			 $coursefee = $this->db->get("courses")->row();
+			$coursefee = $this->db->get("courses")->row();
 			
 			
 				$feedata =array(
