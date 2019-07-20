@@ -1,6 +1,6 @@
 <?php $this->load->view('header.php')?>
  <div class="inner-banner inner">
-            <img src="<?php echo base_url();?>assets/asset/images/about-banner.jpg" alt="about banner" />
+            <img src="<?php echo base_url();?>assets/asset/images/about-banner.jpg" style="margin-top:141px;" alt="about banner" />
         </div>
         <!-- /.inner-banner -->
         <!-- ============== About ============== -->

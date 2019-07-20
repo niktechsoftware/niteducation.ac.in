@@ -9,7 +9,10 @@
                                 	<form class="form-horizontal" action="<?php echo base_url();?>sms/single" method="post">
                                        
                                        <?php $smsbal = checkBalSms();?>
-                                       <h3> Available SMS Balance = <?php echo $smsbal;?></h3>
+                                        <div class="alert alert-success">
+                                            <strong><?php echo "Available SMS Balance = ".checkBalSms();?></strong> 
+                                        </div>
+                                       <!--<h3> Available SMS Balance = <?php // echo $smsbal;?></h3>-->
                                         <div class="form-group">
                                             <label for="input-Default" class="col-sm-2 control-label">Mobile Number<br/> For multiple number (Ex._9568426323,2541256234,2541232345)</label>
                                             <div class="col-sm-10">

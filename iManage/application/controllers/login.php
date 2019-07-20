@@ -51,7 +51,9 @@ class Login extends CI_Controller{
 	}
 	
 	function getcard(){
-	    $studentID = $this->input->post('sid');
+	     $studentID = $this->input->post('sid');
+	     if(substr("$studentID", 0, 7) == "NIT1819") {
+	     
 	    $studentInfo = $this->db->query("SELECT * FROM `student_info` WHERE `student_id`='$studentID' AND `courseApplied`='10' LIMIT 1;");
 	    $data['info'] = $studentInfo->row();
 	    if($data['info']):
@@ -62,7 +64,29 @@ class Login extends CI_Controller{
 		else:
 		    redirect(base_url()."login/admitcard/authFals");
 		endif;
+	  }	
+	  else{
+	        redirect(base_url()."login/admitcard/authFals");
+	  }
 	}
+	
+		function admitcardprint(){
+	    
+		        $this->load->view("admitcardprint");
+		   
+	}
+	
+		function cardprint(){
+	    
+		        $this->load->view("cardprint");
+		   
+	}
+	function studentprofileprint(){
+	    
+		        $this->load->view("studentprofileprint");
+		   
+	}
+	
 	
 	function result(){
 		$this->load->view("a_resultrollno");
@@ -72,13 +96,23 @@ class Login extends CI_Controller{
 	    $studentID = $this->input->post('sid');
 	    $studentInfo = $this->db->query("SELECT * FROM `student_info` WHERE `student_id`='$studentID' AND `courseApplied`='10' LIMIT 1;");
 	    $data['info'] = $studentInfo->row();
+	     //print_r($data['info']);
 	    if($data['info']):
-	        $result = $this->db->query("SELECT `c_id`, `s_id`, `atten`, `marks_obtain`, `course_subject`.* FROM `subject_marks` JOIN `course_subject` ON `subject_marks`.`s_id` = `course_subject`.`sno` WHERE `subject_marks`.`student_id` = $studentID");
+	        $result = $this->db->query("SELECT `c_id`, `s_id`, `atten`, `marks_obtain`, `course_subject`.* FROM `subject_marks` JOIN `course_subject` ON `subject_marks`.`s_id` = `course_subject`.`sno` WHERE `subject_marks`.`student_id` = '$studentID'");
 	        $data['result'] = $result->result();
 	        $this->load->view("a_resultdetail", $data);
 		else:
 		    redirect(base_url()."login/result/authFals");
 		endif;
+	}
+	function a_result_all(){
+	    
+	        $this->load->view("a_result_all");
+	
+	}
+	
+	function errorresult(){
+		$this->load->view("errorresult");
 	}
 	
 	function forgot(){

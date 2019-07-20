@@ -106,4 +106,95 @@ class Welcome extends CI_Controller {
 	public function payFee(){
 		$this->load->view("payFee");
 	}
+	
+	public function payOnline(){
+		$this->load->view("payOnline");
+	}
+
+	function searchstudent(){
+		$id = $this->session->userdata("student_id");
+		$keyword = '%'.$this->input->post("keyword").'%';
+		$sql = "SELECT * FROM student_info WHERE student_id='$keyword' AND name LIKE '$keyword' OR student_id LIKE '$keyword' ORDER BY name ASC LIMIT 0, 10";
+		$query = $this->db->query($sql);
+		foreach ($query->result() as $rs) {
+			// put in bold the written text
+			//$country_name = str_replace($this->input->post("keyword"), '<b>'.$this->input->post("keyword").'</b>', $rs->p_name);
+			// add new option
+		    echo '<li onclick="set_item(\''.str_replace("'", "\'", $rs->student_id." - ".$rs->name).'\')"><a style="color:blue;" href="#javascript();">'.$rs->student_id." - ".$rs->name.'</a></li>';
+		}
+	}
+
+	function retunToPatient(){
+		$keyword = $this->input->post("keyword");
+		$pieces = explode(" - ", $keyword);
+		$id = $pieces[0];
+		$this->db->where("student_id",$id);
+		$row1 = $this->db->get("student_info");
+		if($row1->num_rows() > 0){
+			$row = $row1->row();
+			$course=$this->db->get_where("courses",array("id"=>$row->courseApplied))->row()->course_name;
+			$data = array(
+				"roll_no" => $row->student_id,
+				"name" => $row->name,
+				"fName" => $row->fName,
+				"mobile" => $row->mobile,
+				"email" => $row->email,
+				"course" => $course,
+				"fee" => $row->total_fee
+			);
+		}else{
+			$data = array(
+				"roll_no" => "",
+				"name" => "",
+				"fName" => "",
+				"mobile" => "",
+				"email" =>"",
+				"course" => "",
+				"fee" => ""
+					
+			);
+		}
+		echo (json_encode($data));
+		
+	}
+
+
+	function retunToPatient2(){
+		$keyword = $this->input->post("keyword");
+		$pieces = explode(" - ", $keyword);
+		$id = $pieces[0];
+		$this->db->where("student_id",$id);
+		$this->db->order_by("id","DESC");
+		$row1 = $this->db->get("web_student_requ");
+		if($row1->num_rows() > 0){
+			$row = $row1->row();
+			$course=$this->db->get_where("courses",array("id"=>$row->courseApplied))->row();
+			$data = array(
+				"roll_no" => $row->student_id,
+				"name" => $row->name,
+				"fName" => $row->fName,
+				"mobile" => $row->mobile,
+				"email" => $row->email,
+				"course" => $course->course_name,
+				"fee" => $course->course_fee
+			);
+		}else{
+			$data = array(
+				"roll_no" => "",
+				"name" => "",
+				"fName" => "",
+				"mobile" => "",
+				"email" =>"",
+				"course" => "",
+				"fee" => ""
+					
+			);
+		}
+		echo (json_encode($data));
+		
+	}
+
+	public function paystatus(){
+		$this->load->view("paystatus");
+	}
 }

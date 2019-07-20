@@ -187,6 +187,12 @@ class student_info extends CI_Model{
 		$val = $this->db->update("student_info",$data);
 		return $val;
 	}
+
+	function updatewebStudentInfo($data, $id){
+		$this->db->where("student_id",$id);
+		$val = $this->db->update("web_student_requ",$data);
+		return $val;
+	}
 	function total_registrationn(){
 		$this->db->where("isApprove","NO");
 		$notapprov = $this->db->get("student_info");

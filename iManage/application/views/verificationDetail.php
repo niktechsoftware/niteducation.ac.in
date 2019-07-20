@@ -59,6 +59,7 @@
             <div class="page-inner">
                 <div id="main-wrapper">
                     <div class="row" id="printcontent">
+                        
                         <div class="col-md-8 center">
                             <table border="1">
                         		<tr>

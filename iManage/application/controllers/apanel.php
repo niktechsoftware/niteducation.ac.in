@@ -29,7 +29,8 @@ class Apanel extends CI_Controller{
 				"closing_balance" => 0,
 				"clinic_id" => $clinic_id,
 				"opening_date" => date("Y-m-d"),
-				"closing_date" => date("Y-m-d")			);
+				"closing_date" => date("Y-m-d")	
+				);
 			$this->db->insert('opening_closing_balance',$balance);
 		}else{
 			$cl_date = $clo->closing_date;
@@ -168,7 +169,8 @@ class Apanel extends CI_Controller{
 			$id = $this->input->post("rollnumber");
 			$this->db->where("student_id",$id);
 			$getdata = $this->db->get("student_info")->row();
-			if($getdata){
+			//$getdata2 = $this->db->get("web_student_requ")->row();
+			if($getdata||$getdata2){
 				$data['grtid'] = 3;
 				$data['grtid1'] = $getdata;
 			}
@@ -183,9 +185,11 @@ class Apanel extends CI_Controller{
 			$id=$this->uri->segment(3);
 			$this->db->where("student_id",$id);
 			$getdata = $this->db->get("student_info")->row();
-			if($getdata){
+			//$getdata2 = $this->db->get("web_student_requ")->row();
+			if($getdata||$getdata2){
 				$data['grtid'] = 3;
 				$data['grtid1'] = $getdata;
+
 			}
 		}
 		$data['subPage'] = 'Student';
@@ -193,6 +197,42 @@ class Apanel extends CI_Controller{
 		$data['smallTitle'] = "Student Updation";
 		$data['pageTitle'] = "Student Updation";
 		$data['mainContent'] = "studentEdit";
+		$data['headerCss'] = "headerCss/studentRegisterCss";
+		$data['footerJs'] = "footerJs/studentRegisterJs";
+		$this->load->view("include/template",$data);
+	}
+	public function studentwebEdit(){
+		if($this->input->post("rollnumber")){
+			$id = $this->input->post("rollnumber");
+			$this->db->where("student_id",$id);
+			//$getdata = $this->db->get("student_info")->row();
+			$getdata1 = $this->db->get("web_student_requ")->row();
+			if($getdata1){
+				$data['grtid'] = 3;
+				$data['grtid1'] = $getdata1;
+			}
+			else{
+				$data['grtid']=2;
+			}
+		}
+		else{
+			$data['grtid']=0;
+		}
+		if($this->uri->segment(3)){
+			$id=$this->uri->segment(3);
+			$this->db->where("student_id",$id);
+			//$getdata = $this->db->get("student_info")->row();
+			$getdata1 = $this->db->get("web_student_requ")->row();
+			if($getdata1){
+				$data['grtid'] = 3;
+				$data['grtid1'] = $getdata1;
+			}
+		}
+		$data['subPage'] = 'Student';
+		$data['title'] = "New Student Updation";
+		$data['smallTitle'] = "Student Updation";
+		$data['pageTitle'] = "Student Updation";
+		$data['mainContent'] = "student_web_Edit";
 		$data['headerCss'] = "headerCss/studentRegisterCss";
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
@@ -219,6 +259,18 @@ class Apanel extends CI_Controller{
 		$data['stu_id'] = $this->uri->segment(3);
 		$this->load->view("include/template",$data);
 	}
+
+	public function print_confirm_web(){
+		$data['subPage'] = 'Student';
+		$data['smallTitle'] = "Admission Invoice";
+		$data['pageTitle'] = "Student Profile/Admission Invoice";
+		$data['title'] = "Student Profile";
+		$data['mainContent'] = "print_web_Register";
+		$data['headerCss'] = "headerCss/dashboardCss";
+		$data['footerJs'] = "footerJs/dashboardJs";
+		$data['stu_id'] = $this->uri->segment(3);
+		$this->load->view("include/template",$data);
+	}
 	
 	public function studentList(){
 		$data['subPage'] = 'Student';
@@ -229,7 +281,7 @@ class Apanel extends CI_Controller{
 		$data['headerCss'] = "headerCss/studentListCss";
 		$data['footerJs'] = "footerJs/studentListJs";
 		$this->load->view("include/template",$data);
-	}
+	}  
 	public function pmgdishaList(){
 		$data['subPage'] = 'Student';
 		$data['title'] = "Student List";
@@ -243,10 +295,10 @@ class Apanel extends CI_Controller{
 	
 	
 	public function olr(){
-		$data['subPage'] = 'On Line Registration';
-		$data['title'] = "On Line Registration";
-		$data['smallTitle'] = "On Line Registration List";
-		$data['pageTitle'] = "Student List";
+		$data['subPage'] = 'Online Registration';
+		$data['title'] = "Online Registration";
+		$data['smallTitle'] = "Online Registration List";
+		$data['pageTitle'] = "Online Registration Student Request List";
 		$data['mainContent'] = "olrList";
 		$data['headerCss'] = "headerCss/studentListCss";
 		$data['footerJs'] = "footerJs/studentListJs";
@@ -337,6 +389,28 @@ class Apanel extends CI_Controller{
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
 	}
+	public function searchoptions(){
+		$data['branch'] = $this->general_settings->allInfo();
+		$data['subPage'] = 'SMS';
+		$data['title'] = "Search Option Wise SMS";
+		$data['smallTitle'] = "SMS";
+		$data['pageTitle'] = "Search Option Wise SMS";
+		$data['mainContent'] = "searchoptions";
+		$data['headerCss'] = "headerCss/studentRegisterCss";
+		$data['footerJs'] = "footerJs/studentRegisterJs";
+		$this->load->view("include/template",$data);
+	}
+	public function smssettings(){
+		$data['branch'] = $this->general_settings->allInfo();
+		$data['subPage'] = 'SMS';
+		$data['title'] = "SMS setting";
+		$data['smallTitle'] = "SMS";
+		$data['pageTitle'] = "SMS Setting";
+		$data['mainContent'] = "smssettings";
+		$data['headerCss'] = "headerCss/studentRegisterCss";
+		$data['footerJs'] = "footerJs/studentRegisterJs";
+		$this->load->view("include/template",$data);
+	}
 	
 	public function allStudent(){
 		$data['subPage'] = 'SMS';
@@ -401,16 +475,27 @@ class Apanel extends CI_Controller{
 		$this->load->view("include/template",$data);
 	}
 	
-	public function dailyExpense(){
-		$data['subPage'] = 'Accounting';
-		$data['title'] = "Daily Expense";
+	public function Accounting(){
+		$data['subPage'] = 'Account';
+		$data['title'] = "Accounting";
 		$data['smallTitle'] = "Account";
-		$data['pageTitle'] = "Daily Expense";
-		$data['mainContent'] = "dailyExpense";
+		$data['pageTitle'] = "Accounting";
+		$data['mainContent'] = "Account";
 		$data['headerCss'] = "headerCss/studentRegisterCss";
 		$data['footerJs'] = "footerJs/expenseJs";
 		$this->load->view("include/template",$data);
 	}
+
+	// public function dailyExpense(){
+	// 	$data['subPage'] = 'Accounting';
+	// 	$data['title'] = "Daily Expense";
+	// 	$data['smallTitle'] = "Account";
+	// 	$data['pageTitle'] = "Daily Expense";
+	// 	$data['mainContent'] = "dailyExpense";
+	// 	$data['headerCss'] = "headerCss/studentRegisterCss";
+	// 	$data['footerJs'] = "footerJs/expenseJs";
+	// 	$this->load->view("include/template",$data);
+	// }
 	
 	public function dayBook(){
 		$data['subPage'] = 'Accounting';

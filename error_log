@@ -23,3 +23,389 @@
 [21-Apr-2018 04:43:53 Etc/GMT] PHP Parse error:  syntax error, unexpected '.' in /home/gfincuct/public_html/niteducation.ac.in/application/controllers/instamojo.php on line 17
 [21-Apr-2018 05:43:54 Etc/GMT] PHP Parse error:  syntax error, unexpected '.' in /home/gfincuct/public_html/niteducation.ac.in/application/controllers/instamojo.php on line 17
 [21-Apr-2018 07:43:55 Etc/GMT] PHP Parse error:  syntax error, unexpected '.' in /home/gfincuct/public_html/niteducation.ac.in/application/controllers/instamojo.php on line 17
+[13-May-2019 09:30:15 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:30:19 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:30:47 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:30:48 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:31:05 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:32:37 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:41:07 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:41:24 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:43:15 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:45:20 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:45:20 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 09:45:22 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:30 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:35 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:36 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:49 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:54 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:55 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:56 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:57 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:57 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:57 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:58 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:06:59 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:14:04 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:14:08 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:17:31 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:17:44 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:18:50 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:18:51 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:29 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:30 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:31 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:31 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:31 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:31 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:31 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:32 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:32 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:32 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:32 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:20:32 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:21:38 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:21:39 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:21:39 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:21:39 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:21:40 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:21:40 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:21:40 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:21:40 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:21:40 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:24:06 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:25:51 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:25:53 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:25:54 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:05 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:12 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:12 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:13 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:13 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:13 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:14 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:14 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:14 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:14 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:15 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:15 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:15 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:15 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:16 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:16 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:16 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:16 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:16 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:17 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:18 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:18 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:18 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:18 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:19 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:20 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:20 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:20 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:20 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:20 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:21 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:22 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:23 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:23 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:23 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:52 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:52 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[13-May-2019 10:57:52 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:08:05 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:08:07 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:08:20 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:09:29 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:09:51 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:20:56 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:21:25 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:37:17 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:37:26 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:42:04 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:43:44 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:43:45 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:43:46 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[16-May-2019 07:57:34 Etc/GMT] PHP Fatal error:  Call to undefined function sms() in /home3/gfincuct/public_html/niteducation.ac.in/application/controllers/registration.php on line 133
+[27-May-2019 06:20:21 Etc/GMT] PHP Fatal error:  Call to undefined function form_open_multipart() in /home3/gfincuct/public_html/niteducation.ac.in/application/views/stu_registration_form.php on line 179
+[27-May-2019 06:21:28 Etc/GMT] PHP Fatal error:  Call to undefined function form_open_multipart() in /home3/gfincuct/public_html/niteducation.ac.in/application/views/stu_registration_form.php on line 179
+[27-May-2019 06:22:27 Etc/GMT] PHP Fatal error:  Call to undefined function form_open_multipart() in /home3/gfincuct/public_html/niteducation.ac.in/application/views/stu_registration_form.php on line 179
+[27-May-2019 06:24:30 Etc/GMT] PHP Fatal error:  Call to undefined function form_open_multipart() in /home3/gfincuct/public_html/niteducation.ac.in/application/views/stu_registration_form.php on line 179
+[27-May-2019 06:26:25 Etc/GMT] PHP Fatal error:  Call to undefined function form_open_multipart() in /home3/gfincuct/public_html/niteducation.ac.in/application/views/stu_registration_form.php on line 179
+[27-May-2019 06:28:00 Etc/GMT] PHP Fatal error:  Call to undefined function form_open_multipart() in /home3/gfincuct/public_html/niteducation.ac.in/application/views/stu_registration_form.php on line 179
+[27-May-2019 06:28:39 Etc/GMT] PHP Fatal error:  Call to undefined function form_open_multipart() in /home3/gfincuct/public_html/niteducation.ac.in/application/views/stu_registration_form.php on line 179
+[27-May-2019 06:30:31 Etc/GMT] PHP Fatal error:  Call to undefined function form_open_multipart() in /home3/gfincuct/public_html/niteducation.ac.in/application/views/stu_registration_form.php on line 179
+[27-May-2019 06:31:11 Etc/GMT] PHP Fatal error:  Call to undefined function form_open_multipart() in /home3/gfincuct/public_html/niteducation.ac.in/application/views/stu_registration_form.php on line 179
+[20-Jun-2019 21:15:36 Etc/GMT] PHP Notice:  Undefined variable: \x47\x4c\x4fB\x41\x4cS in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[20-Jun-2019 21:15:36 Etc/GMT] PHP Warning:  file_get_contents(\x68ttp\x73://ima\x67\x65\x2e\x69\x62\x62.c\x6f/\x63t3Zr\x6e/\x69n\x64on\x65s\x69\x61_\x69\x63o\x6e\x2epng): failed to open stream: No such file or directory in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[20-Jun-2019 21:15:36 Etc/GMT] PHP Notice:  Undefined variable: \x47\x4c\x4f\x42\x41\x4c\x53 in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[20-Jun-2019 21:15:36 Etc/GMT] PHP Warning:  gzinflate(): data error in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[20-Jun-2019 21:15:41 Etc/GMT] PHP Notice:  Undefined variable: \x47\x4c\x4fB\x41\x4cS in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[20-Jun-2019 21:15:41 Etc/GMT] PHP Warning:  file_get_contents(\x68ttp\x73://ima\x67\x65\x2e\x69\x62\x62.c\x6f/\x63t3Zr\x6e/\x69n\x64on\x65s\x69\x61_\x69\x63o\x6e\x2epng): failed to open stream: No such file or directory in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[20-Jun-2019 21:15:41 Etc/GMT] PHP Notice:  Undefined variable: \x47\x4c\x4f\x42\x41\x4c\x53 in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[20-Jun-2019 21:15:41 Etc/GMT] PHP Warning:  gzinflate(): data error in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[20-Jun-2019 23:05:34 Etc/GMT] PHP Notice:  Undefined index: coki in /home3/gfincuct/public_html/niteducation.ac.in/indesx.php on line 9
+[20-Jun-2019 23:05:34 Etc/GMT] PHP Notice:  Undefined index: coki in /home3/gfincuct/public_html/niteducation.ac.in/indesx.php on line 10
+[20-Jun-2019 23:08:56 Etc/GMT] PHP Notice:  Undefined index: coki in /home3/gfincuct/public_html/niteducation.ac.in/indesx.php on line 9
+[20-Jun-2019 23:08:56 Etc/GMT] PHP Notice:  Undefined index: coki in /home3/gfincuct/public_html/niteducation.ac.in/indesx.php on line 10
+[20-Jun-2019 23:23:21 Etc/GMT] PHP Notice:  Undefined index: coki in /home3/gfincuct/public_html/niteducation.ac.in/indesx.php on line 9
+[20-Jun-2019 23:23:21 Etc/GMT] PHP Notice:  Undefined index: coki in /home3/gfincuct/public_html/niteducation.ac.in/indesx.php on line 10
+[20-Jun-2019 23:26:26 Etc/GMT] PHP Notice:  Undefined index: coki in /home3/gfincuct/public_html/niteducation.ac.in/indesx.php on line 9
+[20-Jun-2019 23:26:26 Etc/GMT] PHP Notice:  Undefined index: coki in /home3/gfincuct/public_html/niteducation.ac.in/indesx.php on line 10
+[21-Jun-2019 03:27:58 Etc/GMT] PHP Notice:  Undefined variable: \x47\x4c\x4fB\x41\x4cS in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[21-Jun-2019 03:27:58 Etc/GMT] PHP Warning:  file_get_contents(\x68ttp\x73://ima\x67\x65\x2e\x69\x62\x62.c\x6f/\x63t3Zr\x6e/\x69n\x64on\x65s\x69\x61_\x69\x63o\x6e\x2epng): failed to open stream: No such file or directory in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[21-Jun-2019 03:27:58 Etc/GMT] PHP Notice:  Undefined variable: \x47\x4c\x4f\x42\x41\x4c\x53 in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[21-Jun-2019 03:27:58 Etc/GMT] PHP Warning:  gzinflate(): data error in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[21-Jun-2019 03:27:58 Etc/GMT] PHP Notice:  Undefined variable: \x47\x4c\x4fB\x41\x4cS in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[21-Jun-2019 03:27:58 Etc/GMT] PHP Warning:  file_get_contents(\x68ttp\x73://ima\x67\x65\x2e\x69\x62\x62.c\x6f/\x63t3Zr\x6e/\x69n\x64on\x65s\x69\x61_\x69\x63o\x6e\x2epng): failed to open stream: No such file or directory in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[21-Jun-2019 03:27:58 Etc/GMT] PHP Notice:  Undefined variable: \x47\x4c\x4f\x42\x41\x4c\x53 in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[21-Jun-2019 03:27:58 Etc/GMT] PHP Warning:  gzinflate(): data error in /home3/gfincuct/public_html/niteducation.ac.in/login.php(6) : eval()'d code on line 1
+[24-Jun-2019 00:46:25 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 00:46:25 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:04:15 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:04:15 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:07:46 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:07:46 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:28:45 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:28:45 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:39:56 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:39:56 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:41:56 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:41:56 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:41:59 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:41:59 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:47:14 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:47:14 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:47:44 Etc/GMT] PHP Notice:  Undefined index: mins in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[24-Jun-2019 01:47:44 Etc/GMT] PHP Warning:  assert(): Assertion failed in /home3/gfincuct/public_html/niteducation.ac.in/wp-round.php on line 11
+[25-Jun-2019 19:47:08 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 19:47:08 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 20:25:51 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 20:25:51 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 20:25:56 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 20:25:56 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 20:26:01 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 20:26:01 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 20:45:05 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 20:45:05 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 20:45:10 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 20:45:10 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 20:45:15 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 20:45:15 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 21:59:09 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 21:59:09 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:22:13 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:22:13 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:52:50 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:52:50 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:52:51 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:52:51 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:52:54 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:52:54 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:52:56 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:52:56 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:52:57 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:52:57 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:53:00 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:53:00 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:53:01 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:53:01 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:53:05 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:53:05 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:53:08 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:53:08 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:53:10 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:53:10 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 22:53:11 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 22:53:11 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[25-Jun-2019 23:55:34 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[25-Jun-2019 23:55:34 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 00:37:26 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 00:37:26 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:08:01 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:08:01 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:17:54 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:17:54 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:09 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:09 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:12 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:12 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:16 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:16 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:19 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:19 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:20 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:20 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:22 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:22 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:23 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:23 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:25 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:25 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:44 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:44 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:45 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:45 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:52 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:52 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 01:59:59 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 01:59:59 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 02:16:21 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 02:16:21 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 02:16:22 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 02:16:22 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 02:16:24 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 02:16:24 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 02:19:39 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 02:19:39 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 02:35:33 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 02:35:33 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 02:42:50 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 02:42:50 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 02:43:01 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 02:43:01 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 02:47:05 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 02:47:05 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:12:00 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:12:00 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:52:00 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:52:00 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:55:55 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:55:55 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:56:19 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:56:19 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:56:21 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:56:21 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:56:30 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:56:30 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:57:03 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:57:03 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:57:26 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:57:26 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:58:23 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:58:23 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:58:26 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:58:26 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:58:48 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:58:48 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 03:58:53 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 03:58:53 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 04:08:07 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 04:08:07 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 04:58:49 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 04:58:49 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 05:26:11 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 05:26:11 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 05:27:46 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 05:27:46 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 05:35:48 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 05:35:48 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 06:45:41 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 06:45:41 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 06:45:47 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 06:45:47 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 06:46:10 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 06:46:10 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 06:46:15 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 06:46:15 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 06:48:56 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 06:48:56 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 07:04:50 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 07:04:50 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 07:05:03 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 07:05:03 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 07:49:02 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 07:49:02 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 08:13:21 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 08:13:21 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 08:13:24 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 08:13:24 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 08:20:55 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 08:20:55 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 08:21:28 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 08:21:28 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 09:54:33 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 09:54:33 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:27:59 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:27:59 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:28:03 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:28:03 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:28:09 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:28:09 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:28:14 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:28:14 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:28:40 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:28:40 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:29:42 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:29:42 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:29:54 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:29:54 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:30:15 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:30:15 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:30:24 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:30:24 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:30:26 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:30:26 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:30:28 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:30:28 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:30:28 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:30:28 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:30:29 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:30:29 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:30:29 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:30:29 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:30:29 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:30:29 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:34:50 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:34:50 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:35:17 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:35:17 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:36:10 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:36:10 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 10:49:24 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 10:49:24 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 11:05:06 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 11:05:06 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 11:06:10 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 11:06:10 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 11:38:48 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 11:38:48 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 11:58:39 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 11:58:39 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 11:58:47 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 11:58:47 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:05:51 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:05:51 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:05:55 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:05:55 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:06:20 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:06:20 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:06:22 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:06:22 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:10:27 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:10:27 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:12:15 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:12:15 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:12:16 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:12:16 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:12:16 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:12:16 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:12:16 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:12:16 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:12:17 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:12:17 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:14:19 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:14:19 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:14:52 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:14:52 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[26-Jun-2019 12:16:18 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[26-Jun-2019 12:16:18 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/index.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[04-Jul-2019 08:16:51 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[04-Jul-2019 08:16:51 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[04-Jul-2019 08:24:57 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[04-Jul-2019 08:24:57 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0
+[04-Jul-2019 08:25:16 Etc/GMT] PHP Warning:  Unknown: failed to open stream: Permission denied in Unknown on line 0
+[04-Jul-2019 08:25:16 Etc/GMT] PHP Fatal error:  Unknown: Failed opening required '/home3/gfincuct/public_html/niteducation.ac.in/wp-round.php' (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in Unknown on line 0

@@ -71,6 +71,11 @@
     animation-duration: 0.4s
 }
 
+input[type="checkbox"]{
+  width: 20px; /*Desired width*/
+  height: 20px; /*Desired height*/
+  }
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
@@ -133,6 +138,15 @@ tr:nth-child(even) {
 }
 </style>
 
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8340904601787370",
+    enable_page_level_ads: true
+  });
+</script>
  </head>
 <!-- head end -->
 
@@ -169,7 +183,7 @@ tr:nth-child(even) {
 				</div>
 				<input type="submit" value="Submit" name="loging" id="loging" class="main-button hvr-bounce-to-right-blue">
 			</div>
-			<div id="feedback-tab">Quick Query</div>
+			<div id="feedback-tab"><h4>Quick Query</h4></div>
 		</form>
     </div>
     <div class="uv-rounds">
@@ -236,9 +250,13 @@ tr:nth-child(even) {
                                                 <ul class="dropdown-menu dropdown-spcing">
                                                     <li>
                                                         <a href="<?php echo base_url();?>index.php/welcome/about_us">About NIT</a>
+                                                        
                                                     </li>
                                                     <li>
                                                         <a href="<?php echo base_url();?>index.php/welcome/d_message">Director Message</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="<?php echo base_url();?>index.php/welcome/contact_us" class="remove-border hvr-underline-from-center">Contact Us </a>
                                                     </li>
                                                    
                                                 </ul>
@@ -264,16 +282,23 @@ tr:nth-child(even) {
                                                </ul>
                                           </li>
                                             
-                                            <li>
-                                                <a href="<?php echo base_url();?>index.php/welcome/contact_us" class="remove-border hvr-underline-from-center">Contact Us </a>
-                                            </li>
+                                            
                                              
-                                            <li>
+                                         <!--   <li>
                                                 <a href="<?php echo base_url();?>iManage/result.jsp" target="_blank" class="remove-border hvr-underline-from-center"> 
                                                     Result <img src="<?php echo base_url();?>assets/images/newArrow.gif" width="20px" />
                                                 </a>
+                                            </li> -->
+                                                                                   
+                                        <li>
+                                                <!--<a href="<?php //echo base_url();?>iManage/index.php/login/admitcard.jsp" target="_blank" class="remove-border hvr-underline-from-center"> -->
+                                                <!--    AdmitCard <img src="<?php // echo base_url();?>assets/images/newArrow.gif" width="20px" />-->
+                                                <!--</a>-->
+                                                <a href="<?php echo base_url();?>iManage/index.php/login/result.jsp" target="_blank" class="remove-border hvr-underline-from-center"> 
+                                                    Results <img src="<?php echo base_url();?>assets/images/newArrow.gif" width="20px" />
+                                                </a>
                                             </li>
-                                        
+                                       
                                               <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login<span class="caret"></span></a>
                                                 <ul class="dropdown-menu dropdown-spcing">
@@ -285,7 +310,19 @@ tr:nth-child(even) {
                                                     </li>
                                                    
                                                 </ul>
-                                            </li>                                                                                                                                                                  
+                                            </li>
+
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle hvr-underline-from-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Online Pay <span class="caret"></span></a>
+                                                <ul class="dropdown-menu dropdown-spcing">
+                                                    <li>
+                                                        <a href="<?php echo base_url();?>index.php/welcome/payFee" target="_blank">PAY FEE</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="<?php echo base_url();?>index.php/welcome/payOnline" target="_blank">PAY OUTSIDE</a>
+                                                    </li> 
+                                                </ul>
+                                            </li>                                                                                                                                                                   
                                         </ul>
                                     </div>
                                     <!-- /.navbar-collapse -->
