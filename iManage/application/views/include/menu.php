@@ -63,12 +63,12 @@
                                 </li>
 								<li>
                                 	<a href="<?php echo base_url();?>apanel/searchoptions">
-                                	search option wise sms
+                                	Search Option Wise SMS
                                 	</a>
                                 </li>
 								<li>
                                 	<a href="<?php echo base_url();?>apanel/smssettings">
-                                		sms settings
+                                		Sms Settings
                                 	</a>
                                 </li>
                             </ul>
@@ -95,24 +95,29 @@
                             </ul>
                         </li>
                         <li class="droplink">
-                        	<a href="#">
-                        		<span class="fa fa-briefcase"></span>
-                        		<p>&nbsp;&nbsp;&nbsp;Accounting</p>
-                        		<span class="arrow"></span>
-                        	</a>
+						<a href="#">
+						<span class="fa fa-briefcase"></span>
+						<p>&nbsp;&nbsp;&nbsp;Accounting</p>
+                        		<span class="arrow"></span></a>
                             <ul class="sub-menu">
-	                           <li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
+							<li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
+		                        	<a href="<?php echo base_url();?>apanel/Accounting">
+									<span class="fa fa-briefcase"></span>
+		                        		</span><p>&nbsp;&nbsp;&nbsp;Manage Account</p>
+		                        	</a>
+	                       		</li>
+	                           <!-- <li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
 		                        	<a href="<?php echo base_url();?>apanel/dailyExpense">
 		                        		<span class="fa fa-bar-chart">
 		                        		</span><p>&nbsp;&nbsp;&nbsp;Daily Expense</p>
 		                        	</a>
-	                       		</li>
-	                       		<li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
+	                       		</li> -->
+	                       		<!-- <li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
 		                        	<a href="<?php echo base_url();?>apanel/dayBook">
 		                        		<span class="fa fa-book">
 		                        		</span><p>&nbsp;&nbsp;&nbsp;Day Book</p>
 		                        	</a>
-	                       		</li>
+	                       		</li> -->
                             </ul>
                         </li>
                         <li class="droplink">

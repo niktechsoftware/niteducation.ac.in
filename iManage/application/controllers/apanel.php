@@ -475,16 +475,27 @@ class Apanel extends CI_Controller{
 		$this->load->view("include/template",$data);
 	}
 	
-	public function dailyExpense(){
-		$data['subPage'] = 'Accounting';
-		$data['title'] = "Daily Expense";
+	public function Accounting(){
+		$data['subPage'] = 'Account';
+		$data['title'] = "Accounting";
 		$data['smallTitle'] = "Account";
-		$data['pageTitle'] = "Daily Expense";
-		$data['mainContent'] = "dailyExpense";
+		$data['pageTitle'] = "Accounting";
+		$data['mainContent'] = "Account";
 		$data['headerCss'] = "headerCss/studentRegisterCss";
 		$data['footerJs'] = "footerJs/expenseJs";
 		$this->load->view("include/template",$data);
 	}
+
+	// public function dailyExpense(){
+	// 	$data['subPage'] = 'Accounting';
+	// 	$data['title'] = "Daily Expense";
+	// 	$data['smallTitle'] = "Account";
+	// 	$data['pageTitle'] = "Daily Expense";
+	// 	$data['mainContent'] = "dailyExpense";
+	// 	$data['headerCss'] = "headerCss/studentRegisterCss";
+	// 	$data['footerJs'] = "footerJs/expenseJs";
+	// 	$this->load->view("include/template",$data);
+	// }
 	
 	public function dayBook(){
 		$data['subPage'] = 'Accounting';
