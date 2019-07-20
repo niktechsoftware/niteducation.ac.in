@@ -16,7 +16,18 @@
                                           <div class="form-group">
                                             <label for="inputEmail3" class="col-sm-2 control-label">Batch No</label>
                                             <div class="col-sm-4">
-                                                <input class="form-control" type="text" name="branchNo" placeholder="Batch No" required="required">
+                                                
+                                                <select name="batchId" class="form-control" required="required">
+													<option value="">-Select Batch-</option>
+                                                    <?php 
+                                                        $courses= $this->db->get('batch_number')->result_array();
+														
+														foreach($courses as $row):
+													?>
+														<option value="<?php echo $row['id'];?>"><?php echo $row['batch_no'];?></option>
+													<?php endforeach;?>
+												</select>
+                                                <!-- <input class="form-control" type="text" name="branchNo" placeholder="Batch No" required="required"> -->
                                             </div>
                                              <label for="inputEmail3" class="col-sm-2 control-label">Select Branch</label>
                                             <div class="col-sm-4">
@@ -128,6 +139,35 @@
                                             </div>
                                         </div>
                                         
+                                        <div class="form-group">
+                                            <label for="inputEmail3" class="col-sm-2 control-label">Select Reference</label>
+                                            <div class="col-sm-4">
+                                                <select  class="form-control" name="reffId" required="required">
+			                                    	<option value="">-Select Reference-</option>
+                                                    <?php 
+                                                    $reff= $this->db->get('reffered_by')->result_array();
+                                                    foreach($reff as $dt)
+                                                   { ?>
+                                                    <option value="<?php echo $dt['id'];?>"><?php echo $dt['refference'];}?></option>
+                                                        <?php //endforeach;?>
+			                                    </select>
+                                            </div>
+
+                                        
+                                            <!-- <label for="inputEmail3" class="col-sm-2 control-label">Select reference</label>
+                                            <div class="col-sm-4"> -->
+                                                <!-- <select  class="form-control" name="timing" required="required">
+			                                    	<option value="">-Select batch time-</option>
+			                                    	<?php 
+														//$courses = $this->db->get("batch_time")->result();
+														//foreach($courses as $row):
+													?>
+														<option value="<?php //echo $row->batch_time;?>"><?php //echo $row->batch_time;?></option>
+													<?php //endforeach;?>
+			                                    </select> -->
+                                            <!-- </div> -->
+                                        </div>
+
                                         <hr/>
                                         <div class="form-group">
                                             <label for="inputEmail3" class="col-sm-2 control-label">Total Fee</label>
