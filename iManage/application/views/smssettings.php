@@ -8,18 +8,26 @@
   <div class="col-md-3">
       <label>Admission SMS:</label>
       </div> 
-      <div class="col-md-9">
+      <div class="col-md-6">
             <textarea rows="4" cols="50">
       </textarea>
-      </div></div>
+      </div>
+      <div class="3">
+      <button type="submit" value="edit">Edit</button>
+  <button type="reset" value="delete">Delete</button>
+  </div></div>
       <div class="row" style="margin:20px;">
   <div class="col-md-3">
-      <label>Admission SMS:</label>
+      <label>Fee Payment:</label>
       </div> 
-      <div class="col-md-9">
+      <div class="col-md-6">
             <textarea rows="4" cols="50">
       </textarea>
-      </div></div>
+      </div>
+      <div class="3">
+      <button type="submit" value="edit">Edit</button>
+  <button type="reset" value="delete">Delete</button>
+  </div></div>
       <div class="row" style="margin:20px;">
   <div class="col-md-3">
       <label>Change Sender Id:</label>
@@ -32,16 +40,8 @@
       </div></div>
       <div class="row">
       <div class="col-md-12">
-      <input type="checkbox" data-toggle="toggle" data-on="Enabled" data-off="Disabled">
-<input type="checkbox" id="toggle-two">
-<script>
-  $(function() {
-    $('#toggle-two').bootstrapToggle({
-      on: 'Enabled',
-      off: 'Disabled'
-    });
-  })
-</script>
+     
+
       </div>
       </div>
   </body>
