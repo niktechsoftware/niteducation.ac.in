@@ -61,6 +61,16 @@
                                 		All Student
                                 	</a>
                                 </li>
+								<li>
+                                	<a href="<?php echo base_url();?>apanel/searchoptions">
+                                	search option wise sms
+                                	</a>
+                                </li>
+								<li>
+                                	<a href="<?php echo base_url();?>apanel/smssettings">
+                                		sms settings
+                                	</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="droplink">

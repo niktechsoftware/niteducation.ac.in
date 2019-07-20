@@ -389,6 +389,28 @@ class Apanel extends CI_Controller{
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
 	}
+	public function searchoptions(){
+		$data['branch'] = $this->general_settings->allInfo();
+		$data['subPage'] = 'SMS';
+		$data['title'] = "Search Option Wise SMS";
+		$data['smallTitle'] = "SMS";
+		$data['pageTitle'] = "Search Option Wise SMS";
+		$data['mainContent'] = "searchoptions";
+		$data['headerCss'] = "headerCss/studentRegisterCss";
+		$data['footerJs'] = "footerJs/studentRegisterJs";
+		$this->load->view("include/template",$data);
+	}
+	public function smssettings(){
+		$data['branch'] = $this->general_settings->allInfo();
+		$data['subPage'] = 'SMS';
+		$data['title'] = "SMS setting";
+		$data['smallTitle'] = "SMS";
+		$data['pageTitle'] = "SMS Setting";
+		$data['mainContent'] = "smssettings";
+		$data['headerCss'] = "headerCss/studentRegisterCss";
+		$data['footerJs'] = "footerJs/studentRegisterJs";
+		$this->load->view("include/template",$data);
+	}
 	
 	public function allStudent(){
 		$data['subPage'] = 'SMS';
