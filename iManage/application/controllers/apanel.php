@@ -411,6 +411,7 @@ class Apanel extends CI_Controller{
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
 	}
+	
 	public function smsinsert(){
 		$this->load->model('user');
 //	echo $msz=	"Dear $c_name".$this->input->post('admissionsms'); exit();
