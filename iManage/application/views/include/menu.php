@@ -151,6 +151,18 @@
 		                        		</span><p>&nbsp;&nbsp;&nbsp;Batch Timing</p>
 		                        	</a>
 	                       		</li>
+								<li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
+		                        	<a href="<?php echo base_url();?>apanel/batchnumber">
+		                        		<span class="glyphicon glyphicon-time">
+		                        		</span><p>&nbsp;&nbsp;&nbsp;Batch Number</p>
+		                        	</a>
+	                       		</li>
+								<li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
+		                        	<a href="<?php echo base_url();?>apanel/refferby">
+		                        		<span class="glyphicon glyphicon-time">
+		                        		</span><p>&nbsp;&nbsp;&nbsp;Reffered By</p>
+		                        	</a>
+	                       		</li>
 	                       		<li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
 		                        	<a href="<?php echo base_url();?>apanel/batchTimeSpecial">
 		                        		<span class="glyphicon glyphicon-time">

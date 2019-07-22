@@ -585,7 +585,29 @@ alert ('Your Msg Is Successfully');
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
 	}
-	
+
+	public function batchnumber(){
+		$data['subPage'] = 'Settings';
+		$data['title'] = "Batch Number";
+		$data['smallTitle'] = "Settings";
+		$data['pageTitle'] = "Batch Number";
+		$data['mainContent'] = "batch_number";
+		$data['headerCss'] = "headerCss/studentRegisterCss";
+		$data['footerJs'] = "footerJs/studentRegisterJs";
+		$this->load->view("include/template",$data);
+	}
+
+	public function refferby(){
+		$data['subPage'] = 'Settings';
+		$data['title'] = "Reffered By";
+		$data['smallTitle'] = "Settings";
+		$data['pageTitle'] = "Reffered By";
+		$data['mainContent'] = "reffer_by";
+		$data['headerCss'] = "headerCss/studentRegisterCss";
+		$data['footerJs'] = "footerJs/studentRegisterJs";
+		$this->load->view("include/template",$data);
+	}
+
 	public function batchTimeSpecial(){
 		$data['subPage'] = 'Settings';
 		$data['title'] = "Special Batch Time";

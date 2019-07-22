@@ -443,6 +443,30 @@ class AllForm extends CI_Controller{
 		}
 	}
 	
+	public function saveBatch_number(){
+		$data = array(
+				"batch_no" => $this->input->post("batch")
+		);
+		if($this->db->insert("batch_number",$data)){
+			redirect("apanel/batchnumber");
+		}
+		else{
+			echo "Somthing going wrong. Please Contact Site administrator";
+		}
+	}
+	
+	public function saveRefferby(){
+		$data = array(
+				"refference" => $this->input->post("reff")
+		);
+		if($this->db->insert("reffered_by",$data)){
+			redirect("apanel/refferby");
+		}
+		else{
+			echo "Somthing going wrong. Please Contact Site administrator";
+		}
+	}
+
 	public function editBatch(){
 		$data = array(
 				"batch_time" => $this->input->post("batch")
@@ -464,10 +488,92 @@ class AllForm extends CI_Controller{
 		}
 	}
 	
+	public function editBatch_number(){
+		//echo $d=$this->input->post('id');
+		// $data = array(
+		// 		"branch_no" => $this->input->post("batch")
+		// );
+		// $data1= array(
+		// 		"timing"=>$this->input->post("batch")
+		// );
+		// $data = array(
+		// 		"branch_no" => $this->input->post("batch")
+		// );
+		// $oldbatch = $this->input->post("batchold");
+		
+		// $this->db->where("id",$this->input->post("id"));
+		// if($this->db->update("student_info",$data)){
+		// 	$this->db->where("branch_no",$oldbatch);
+		// 	$this->db->update("student_info",$data1);
+		// 	redirect("apanel/batchnumber");
+		// }
+		// else{
+		// 	echo "Somthing going wrong. Please Contact Site administrator";
+		// }
+		// echo $this->input->post('id');
+		// echo $this->input->post('batch');
+		// echo $this->input->post('batchold');
+		// exit();
+
+		 $data=array(
+		'batch_no'=>$this->input->post('batch')
+	     );
+	
+			$this->db->where('id',$this->input->post('id'));
+			$update=$this->db->update('batch_number',$data);
+			if($update){
+			redirect("apanel/batchnumber");
+			}
+			else
+			{
+				echo "somthing wrong";
+
+			}
+		
+	}
+
+	public function editrefferby(){
+	
+		 $data=array(
+		'refference'=>$this->input->post('reff')
+	     );
+	
+			$this->db->where('id',$this->input->post('id'));
+			$update=$this->db->update('reffered_by',$data);
+			if($update){
+			redirect("apanel/refferby");
+			}
+			else
+			{
+				echo "somthing wrong";
+
+			}
+		
+	}
+
 	public function deleteBatch(){
 		$this->db->where("id",$this->uri->segment(3));
 		if($this->db->delete("batch_time")){
 			redirect("apanel/batchTime");
+		}
+		else{
+			echo "Somthing going wrong. Please Contact Site administrator";
+		}
+	}
+	public function deleteBatchnumber(){
+		$this->db->where("id",$this->uri->segment(3));
+		if($this->db->delete("batch_number")){
+			redirect("apanel/batchnumber");
+		}
+		else{
+			echo "Somthing going wrong. Please Contact Site administrator";
+		}
+	}
+
+	public function deleteReference(){
+		$this->db->where("id",$this->uri->segment(3));
+		if($this->db->delete("reffered_by")){
+			redirect("apanel/refferby");
 		}
 		else{
 			echo "Somthing going wrong. Please Contact Site administrator";
