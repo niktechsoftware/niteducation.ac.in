@@ -53,12 +53,12 @@
                                 </li> 
                                  <li>
                                 	<a href="<?php echo base_url();?>apanel/batchWise">
-                                		Batch Wise
+                                		Batch Wise SMS
                                 	</a>
                                 </li>
                                 <li>
                                 	<a href="<?php echo base_url();?>apanel/allStudent">
-                                		All Student
+                                		All Student SMS
                                 	</a>
                                 </li>
 								<li>
