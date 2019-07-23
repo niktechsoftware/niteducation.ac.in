@@ -508,6 +508,9 @@ alert ('Your Msg Is Successfully');
 		$data['footerJs'] = "footerJs/expenseJs";
 		$this->load->view("include/template",$data);
 	}
+	public function showBranch(){
+		
+	}
 
 	// public function dailyExpense(){
 	// 	$data['subPage'] = 'Accounting';
