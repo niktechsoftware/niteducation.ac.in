@@ -412,6 +412,29 @@ class Apanel extends CI_Controller{
 		$this->load->view("include/template",$data);
 	}
 	
+	public function smsinsert(){
+		$this->load->model('user');
+//	echo $msz=	"Dear $c_name".$this->input->post('admissionsms'); exit();
+		$msg = array(
+			'addmission' =>    $this->input->post('admissionsms')  , 
+            'fee' =>    $this->input->post('feepayment')  , 
+			'senderid' =>    $this->input->post('sender'),
+			 'date'=>date('y-m-d')
+		);	
+		$data=$this->user->insertmsg($msg);
+	    	if($data)
+			{?>
+<script>
+alert ('Your Msg Is Successfully');
+</script>
+
+		<?php
+			redirect('apanel/smssettings','refresh');
+				}
+				else{
+					echo " not inserted...";
+	}
+}
 	public function allStudent(){
 		$data['subPage'] = 'SMS';
 		$data['title'] = "All Student";
