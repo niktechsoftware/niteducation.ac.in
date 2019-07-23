@@ -13,21 +13,36 @@
   <div class="col-md-3">
       <label>Admission SMS:</label>
       </div> 
+      <?php $deta = $this->db->get("sms")->row();?>
       <div class="col-md-6">
             <textarea rows="4" cols="85" name="admissionsms" required>
-      </textarea>
+            <?php echo $deta->addmission;?>
+            </textarea>
       </div>
+            <div class="3">
+      <input type="submit" class="btn btn-warning" value="Edit">
+      <input type="submit" class="btn btn-danger" value="Delete">
+      </div></div>
+      </form>
      
-  </div>
+     
+      <form action="<?php echo base_url();?>index.php/apanel/smsinsert" method="post">
       <div class="row" style="margin:20px;">
   <div class="col-md-3">
       <label>Fee Payment:</label>
       </div> 
+      <?php $deta = $this->db->get("sms")->row();?>
       <div class="col-md-6">
             <textarea rows="4" cols="85" name="feepayment" required>
+            <?php echo $deta->fee;?>
       </textarea>
       </div>
+      <div class="3">
+      <input type="submit" class="btn btn-warning" value="Edit">
+      <input type="submit" class="btn btn-danger" value="Delete">
+      </div>
   </div> 
+  </form>
       <div class="row" style="margin:20px;">
   <div class="col-md-3">
       <label>Change Sender Id:</label>
@@ -40,10 +55,10 @@
       </div></div>
       <div class="row">
       <div class="col-md-12" style="text-align:center;">
-      <input type="submit" class="btn btn-info" >
-      <!-- <input id="toggle-trigger" type="checkbox" checked data-toggle="toggle" style="width:50%;"> -->
+      <!--<input type="submit" class="btn btn-info" >-->
+      <input id="toggle-trigger" type="checkbox" checked data-toggle="toggle" style="width:50%;"> 
       </div>
       </div>
-      </form>
+    
   </body>
 </html>

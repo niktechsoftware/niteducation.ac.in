@@ -435,6 +435,11 @@ alert ('Your Msg Is Successfully');
 					echo " not inserted...";
 	}
 }
+public function update($id, $data)
+{
+	$this->db->where('id', $id);
+	$this->db->update($this-> sms, $data);
+}
 	public function allStudent(){
 		$data['subPage'] = 'SMS';
 		$data['title'] = "All Student";
