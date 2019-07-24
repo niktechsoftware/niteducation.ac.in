@@ -411,34 +411,64 @@ class Apanel extends CI_Controller{
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
 	}
-	
 	public function smsinsert(){
-		$this->load->model('user');
-//	echo $msz=	"Dear $c_name".$this->input->post('admissionsms'); exit();
+		$this->db->where('id',1 );
+		$sms = $this->db->get('sms');
+		if($sms->num_rows()>0){
+			$msg = array(
+				'addmission'=>$this->input->post('admissionsms')  , 	
+				'date'=>date('y-m-d')
+			);
+			$this->db->where('id',1 );
+			$this->db->update('sms',$msg);		
+		}else{
+		$msg= array(
+			'addmission'=>$this->input->post('admissionsms')  , 	
+			'date'=>date('y-m-d')
+			);
+			$this->db->insert('sms',$msg);
+		}
+}
+public function feeinsert(){
+	$this->db->where('id',1 );
+	$sms = $this->db->get('sms');
+	if($sms->num_rows()>0){
 		$msg = array(
-			'addmission' =>    $this->input->post('admissionsms')  , 
-            'fee' =>    $this->input->post('feepayment')  , 
-			'senderid' =>    $this->input->post('sender'),
-			 'date'=>date('y-m-d')
-		);	
-		$data=$this->user->insertmsg($msg);
-	    	if($data)
-			{?>
-<script>
-alert ('Your Msg Is Successfully');
-</script>
-
-		<?php
-			redirect('apanel/smssettings','refresh');
-				}
-				else{
-					echo " not inserted...";
+			'fee' =>    $this->input->post('fee')  , 	
+			'date'=>date('y-m-d')
+		);
+		$this->db->where('id',1 );
+		$this->db->update('sms',$msg);
+	}else{
+	$msg= array(
+		'fee' =>    $this->input->post('fee')  , 	
+		'date'=>date('y-m-d')
+		);
+		$this->db->insert('sms',$msg);
 	}
 }
 public function update($id, $data)
 {
 	$this->db->where('id', $id);
 	$this->db->update($this-> sms, $data);
+}
+public function senderid(){
+	$this->db->where('id',1 );
+	$sms = $this->db->get('sms');
+	if($sms->num_rows()>0){
+		$msg = array(
+			'senderid' =>$this->input->post('sender')  , 	
+			'date'=>date('y-m-d')
+		);
+		$this->db->where('id',1 );
+		$this->db->update('sms',$msg);
+	}else{
+	$msg= array(
+		'senderid' =>$this->input->post('sender')  , 	
+		'date'=>date('y-m-d')
+		);
+		$this->db->insert('sms',$msg);
+	}
 }
 	public function allStudent(){
 		$data['subPage'] = 'SMS';
