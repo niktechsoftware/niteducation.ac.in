@@ -457,18 +457,51 @@ public function senderid(){
 	$sms = $this->db->get('sms');
 	if($sms->num_rows()>0){
 		$msg = array(
-			'senderid' =>$this->input->post('sender')  , 	
+			'senderid' =>$this->input->post('senderid')  , 	
 			'date'=>date('y-m-d')
 		);
 		$this->db->where('id',1 );
 		$this->db->update('sms',$msg);
 	}else{
 	$msg= array(
-		'senderid' =>$this->input->post('sender')  , 	
+		'senderid' =>$this->input->post('senderid')  , 	
 		'date'=>date('y-m-d')
 		);
 		$this->db->insert('sms',$msg);
 	}
+}
+
+
+public function status(){
+	$this->db->where('id',1 );
+	$sms = $this->db->get('sms');
+	if($sms->num_rows()>0){
+		$msg = array(
+			'status' =>$this->input->post('sta')  , 	
+			'date'=>date('y-m-d'));
+		$this->db->where('id',1 );
+		$this->db->update('sms',$msg);
+	}else{
+	$msg= array(
+		'status' =>$this->input->post('sta')  , 	
+		'date'=>date('y-m-d'));
+		$this->db->insert('sms',$msg);
+	}
+}
+
+public function delete1(){
+	$data['addmission'] = '';
+	$this->db->where('id',1);
+	$this->db->update('sms',$data);
+	redirect('apanel/smssettings');
+}
+public function delete2(){
+	$data = array(
+		'fee' => '' ,
+	);
+	$this->db->where('id',1);
+	$this->db->update('sms',$data);
+	redirect('apanel/smssettings');
 }
 	public function allStudent(){
 		$data['subPage'] = 'SMS';
@@ -480,7 +513,6 @@ public function senderid(){
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
 	}
-	
 	public function takeFee(){
 		$data['subPage'] = 'FEE';
 		$data['title'] = "Fee Recieve";
