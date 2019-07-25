@@ -485,7 +485,51 @@ class Apanel extends CI_Controller{
 		$data['footerJs'] = "footerJs/expenseJs";
 		$this->load->view("include/template",$data);
 	}
+	public function Coursefee(){
+		$data['subPage'] = 'Course Fee';
+		$data['title'] = "Course Fee";
+		$data['smallTitle'] = "Fee";
+		$data['pageTitle'] = "Course Fee";
+		$data['mainContent'] = "Course_fee";
+		
+		$data['headerCss'] = "headerCss/studentRegisterCss";
+		$data['footerJs'] = "footerJs/expenseJs";
+		$this->load->view("include/template",$data);
+	}
+	public function Coursefee2(){
+		//$id=$this->uri->segment(3);
+		$id=$this->input->post('course_id');
+		$this->load->model('coursefee');
+		$data['dt']= $this->coursefee->details($id);
+		// $data['headerCss'] = "headerCss/studentListCss";
+		// $data['footerJs'] = "footerJs/studentListJs";
+       $this->load->view('stulist',$data);
+		
+		// $data['subPage'] = 'Course Fee';
+		// $data['title'] = "Course Fee";
+		// $data['smallTitle'] = "Fee";
+		// $data['pageTitle'] = "Course Fee";
+		// $data['mainContent'] = "Course_fee";
+		// $data['headerCss'] = "headerCss/studentRegisterCss";
+		// $data['footerJs'] = "footerJs/expenseJs";
 
+	// 	//print_r($dt);
+	// 	// foreach($dt as $rw)
+    //     // {
+	// 	//    $x=$rw->student_id.$rw->name;
+	// 	//    $t['t']=array(
+	// 	// 	   'name'=>$x
+	// 	//    );
+	// 	//    $this->load->view('course_fee',$t);
+	// 	// }
+	// 	//print_r($t);
+	// 	// $this->load->view('course_fee',$dt);
+
+	// 	foreach($dt as $rw)
+    //     {
+    //        echo "<a href=''>".$rw->student_id.$rw->name."<br>"."</a>";
+    //     }
+	// }
 	// public function dailyExpense(){
 	// 	$data['subPage'] = 'Accounting';
 	// 	$data['title'] = "Daily Expense";
@@ -496,6 +540,7 @@ class Apanel extends CI_Controller{
 	// 	$data['footerJs'] = "footerJs/expenseJs";
 	// 	$this->load->view("include/template",$data);
 	// }
+}
 	
 	public function dayBook(){
 		$data['subPage'] = 'Accounting';

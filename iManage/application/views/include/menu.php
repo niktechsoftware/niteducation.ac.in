@@ -80,7 +80,13 @@
                         		<span class="arrow"></span>
                         	</a>
                             <ul class="sub-menu">
-	                           <li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
+								<li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
+		                        	<a href="<?php echo base_url();?>apanel/Coursefee">
+		                        		<span class="fa fa-cc-visa"></span>
+		                        		<p>&nbsp;&nbsp;&nbsp;Course Fee</p>
+		                        	</a>
+	                       		</li>
+	                           <!-- <li <?php if($this->uri->segment(2) == 'studentList'){?>class="active"<?php }?>>
 		                        	<a href="<?php echo base_url();?>apanel/takeFee">
 		                        		<span class="fa fa-cc-visa"></span>
 		                        		<p>&nbsp;&nbsp;&nbsp;Take Fee</p>
@@ -91,7 +97,7 @@
 		                        		<span class="fa fa-print">
 		                        		</span><p>&nbsp;&nbsp;&nbsp;Fee Reports</p>
 		                        	</a>
-	                       		</li>
+	                       		</li> -->
                             </ul>
                         </li>
                         <li class="droplink">

@@ -1,7 +1,7 @@
  		
-        <script src="<?php echo base_url()?>assets/plugins/pace-master/pace.min.js"></script>
-        <script src="<?php echo base_url()?>assets/plugins/jquery-blockui/jquery.blockui.js"></script>
-        <script src="<?php echo base_url()?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+     <script src="<?php echo base_url()?>assets/plugins/pace-master/pace.min.js"></script>
+     <script src="<?php echo base_url()?>assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+    <script src="<?php echo base_url()?>assets/plugins/bootstrap/js/bootstrap.min.js"></script>
         <script src="<?php echo base_url()?>assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
         <script src="<?php echo base_url()?>assets/plugins/switchery/switchery.min.js"></script>
         <script src="<?php echo base_url()?>assets/plugins/uniform/jquery.uniform.min.js"></script>
@@ -13,6 +13,10 @@
         <script src="<?php echo base_url()?>assets/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
         <script src="<?php echo base_url()?>assets/js/modern.min.js"></script>
         <script src="<?php echo base_url()?>assets/js/pages/form-elements.js"></script>
+		<script src="<?php echo base_url()?>assets/js/pages/table-data.js"></script>
+		<script src="<?php echo base_url()?>assets/plugins/datatables/js/jquery.datatables.min.js"></script>
+        <script src="<?php echo base_url()?>assets/plugins/x-editable/bootstrap3-editable/js/bootstrap-editable.js"></script>
+		<script src="<?php echo base_url()?>assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
         
         <script>
 			$(document).ready(function(){
