@@ -411,7 +411,98 @@ class Apanel extends CI_Controller{
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
 	}
-	
+	public function smsinsert(){
+		$this->db->where('id',1 );
+		$sms = $this->db->get('sms');
+		if($sms->num_rows()>0){
+			$msg = array(
+				'addmission'=>$this->input->post('admissionsms')  , 	
+				'date'=>date('y-m-d')
+			);
+			$this->db->where('id',1 );
+			$this->db->update('sms',$msg);		
+		}else{
+		$msg= array(
+			'addmission'=>$this->input->post('admissionsms')  , 	
+			'date'=>date('y-m-d')
+			);
+			$this->db->insert('sms',$msg);
+		}
+}
+public function feeinsert(){
+	$this->db->where('id',1 );
+	$sms = $this->db->get('sms');
+	if($sms->num_rows()>0){
+		$msg = array(
+			'fee' =>    $this->input->post('fee')  , 	
+			'date'=>date('y-m-d')
+		);
+		$this->db->where('id',1 );
+		$this->db->update('sms',$msg);
+	}else{
+	$msg= array(
+		'fee' =>    $this->input->post('fee')  , 	
+		'date'=>date('y-m-d')
+		);
+		$this->db->insert('sms',$msg);
+	}
+}
+public function update($id, $data)
+{
+	$this->db->where('id', $id);
+	$this->db->update($this-> sms, $data);
+}
+public function senderid(){
+	$this->db->where('id',1 );
+	$sms = $this->db->get('sms');
+	if($sms->num_rows()>0){
+		$msg = array(
+			'senderid' =>$this->input->post('senderid')  , 	
+			'date'=>date('y-m-d')
+		);
+		$this->db->where('id',1 );
+		$this->db->update('sms',$msg);
+	}else{
+	$msg= array(
+		'senderid' =>$this->input->post('senderid')  , 	
+		'date'=>date('y-m-d')
+		);
+		$this->db->insert('sms',$msg);
+	}
+}
+
+
+public function status(){
+	$this->db->where('id',1 );
+	$sms = $this->db->get('sms');
+	if($sms->num_rows()>0){
+		$msg = array(
+			'status' =>$this->input->post('sta')  , 	
+			'date'=>date('y-m-d'));
+		$this->db->where('id',1 );
+		$this->db->update('sms',$msg);
+	}else{
+	$msg= array(
+		'status' =>$this->input->post('sta')  , 	
+		'date'=>date('y-m-d'));
+		$this->db->insert('sms',$msg);
+	}
+}
+
+public function delete1(){
+	$data['addmission'] = '';
+	$this->db->where('id',1);
+	$this->db->update('sms',$data);
+	redirect('apanel/smssettings');
+}
+public function delete2(){
+	$data = array(
+		'fee' => '' ,
+	);
+	$this->db->where('id',1);
+	$this->db->update('sms',$data);
+	redirect('apanel/smssettings');
+}
 	public function allStudent(){
 		$data['subPage'] = 'SMS';
 		$data['title'] = "All Student";
@@ -422,7 +513,6 @@ class Apanel extends CI_Controller{
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
 	}
-	
 	public function takeFee(){
 		$data['subPage'] = 'FEE';
 		$data['title'] = "Fee Recieve";
