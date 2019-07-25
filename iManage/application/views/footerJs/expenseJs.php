@@ -30,5 +30,35 @@
 						$("#reason").hide();
 					}
 				});
+                $("#branch1").hide();
+                $("#course1").hide();
+                $("#stud1").hide();
+                $("#total_bal").hide();
+                $("#test").change(function(){
+                    var value= $("#test").val();
+                    //alert(value);
+                    if(value == "branch"){
+                        $("#branch1").show();
+                        $("#course1").hide();
+                         $("#stud1").hide();
+                    } else if (value == "crouse"){
+                        $("#course1").show();
+                        $("#branch1").hide();
+                        $("#stud1").hide();
+                    } else if(value == "student"){
+                        $("#stud1").show();
+                        $("#branch1").hide();
+                        $("#course1").hide();
+                    }
+                });
+
+                $("#test1").change(function(){
+                    var value1= $("#test1").val();
+                    alert(value1);
+                    if(value1 == "Total"){
+                        $("#total_bal").show();
+                    }
+                });
 			});
         </script>
+     
