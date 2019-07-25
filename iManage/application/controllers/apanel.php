@@ -575,6 +575,7 @@ public function delete2(){
 		$data['footerJs'] = "footerJs/expenseJs";
 		$this->load->view("include/template",$data);
 	}
+
 	public function Coursefee(){
 		$data['subPage'] = 'Course Fee';
 		$data['title'] = "Course Fee";
@@ -602,6 +603,7 @@ public function delete2(){
 		// $data['mainContent'] = "Course_fee";
 		// $data['headerCss'] = "headerCss/studentRegisterCss";
 		// $data['footerJs'] = "footerJs/expenseJs";
+
 
 	// 	//print_r($dt);
 	// 	// foreach($dt as $rw)

@@ -10,12 +10,12 @@
 		                            	<?php if($this->uri->segment(3) == "edit"):?>
 		                            	<?php $this->db->where("id",$this->uri->segment(4));?>
 		                            	<?php $deta = $this->db->get("batch_time")->row();?>
-		                                   <form class="form-horizontal" action="<?php echo base_url()?>apanelForms/editBatch" method="post">
+		                                   <form class="form-horizontal" action="<?php echo base_url()?>apanelForms/editBatch/<?php  $this->uri->segment(4);?>" method="post">
 		                                        <div class="form-group">
 		                                            <label for="input-Default" class="col-sm-6 control-label"><strong>Name Of Expense Type</strong></label>
 		                                            <div class="col-sm-6">
 		                                            	<input type="hidden" value="<?php echo $this->uri->segment(4);?>" name="id">
-		                                                <input type="text" class="form-control" value="<?php echo $deta->batch_time; ?>" id="input-Default" name="batch">
+		                                                <input type="text" class="form-control" value="<?php echo $deta->eName; ?>" id="input-Default" name="batch">
 		                                            </div>
 		                                        </div>
 		                                         <div class="col-sm-offset-2 col-sm-10">
@@ -27,7 +27,7 @@
 		                                        <div class="form-group">
 		                                            <label for="input-Default" class="col-sm-6 control-label"><strong>Name Of Expense Type</strong></label>
 		                                            <div class="col-sm-6">
-		                                                <input type="text" class="form-control" id="input-Default" name="batch">
+		                                                <input type="text" class="form-control" id="input-Default" name="expense_type">
 		                                            </div>
 		                                        </div>
 		                                         <div class="col-sm-offset-2 col-sm-10">
