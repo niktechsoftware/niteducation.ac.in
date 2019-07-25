@@ -411,29 +411,97 @@ class Apanel extends CI_Controller{
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
 	}
-	
 	public function smsinsert(){
-		$this->load->model('user');
-//	echo $msz=	"Dear $c_name".$this->input->post('admissionsms'); exit();
+		$this->db->where('id',1 );
+		$sms = $this->db->get('sms');
+		if($sms->num_rows()>0){
+			$msg = array(
+				'addmission'=>$this->input->post('admissionsms')  , 	
+				'date'=>date('y-m-d')
+			);
+			$this->db->where('id',1 );
+			$this->db->update('sms',$msg);		
+		}else{
+		$msg= array(
+			'addmission'=>$this->input->post('admissionsms')  , 	
+			'date'=>date('y-m-d')
+			);
+			$this->db->insert('sms',$msg);
+		}
+}
+public function feeinsert(){
+	$this->db->where('id',1 );
+	$sms = $this->db->get('sms');
+	if($sms->num_rows()>0){
 		$msg = array(
-			'addmission' =>    $this->input->post('admissionsms')  , 
-            'fee' =>    $this->input->post('feepayment')  , 
-			'senderid' =>    $this->input->post('sender'),
-			 'date'=>date('y-m-d')
-		);	
-		$data=$this->user->insertmsg($msg);
-	    	if($data)
-			{?>
-<script>
-alert ('Your Msg Is Successfully');
-</script>
-
-		<?php
-			redirect('apanel/smssettings','refresh');
-				}
-				else{
-					echo " not inserted...";
+			'fee' =>    $this->input->post('fee')  , 	
+			'date'=>date('y-m-d')
+		);
+		$this->db->where('id',1 );
+		$this->db->update('sms',$msg);
+	}else{
+	$msg= array(
+		'fee' =>    $this->input->post('fee')  , 	
+		'date'=>date('y-m-d')
+		);
+		$this->db->insert('sms',$msg);
 	}
+}
+public function update($id, $data)
+{
+	$this->db->where('id', $id);
+	$this->db->update($this-> sms, $data);
+}
+public function senderid(){
+	$this->db->where('id',1 );
+	$sms = $this->db->get('sms');
+	if($sms->num_rows()>0){
+		$msg = array(
+			'senderid' =>$this->input->post('senderid')  , 	
+			'date'=>date('y-m-d')
+		);
+		$this->db->where('id',1 );
+		$this->db->update('sms',$msg);
+	}else{
+	$msg= array(
+		'senderid' =>$this->input->post('senderid')  , 	
+		'date'=>date('y-m-d')
+		);
+		$this->db->insert('sms',$msg);
+	}
+}
+
+
+public function status(){
+	$this->db->where('id',1 );
+	$sms = $this->db->get('sms');
+	if($sms->num_rows()>0){
+		$msg = array(
+			'status' =>$this->input->post('sta')  , 	
+			'date'=>date('y-m-d'));
+		$this->db->where('id',1 );
+		$this->db->update('sms',$msg);
+	}else{
+	$msg= array(
+		'status' =>$this->input->post('sta')  , 	
+		'date'=>date('y-m-d'));
+		$this->db->insert('sms',$msg);
+	}
+}
+
+public function delete1(){
+	$data['addmission'] = '';
+	$this->db->where('id',1);
+	$this->db->update('sms',$data);
+	redirect('apanel/smssettings');
+}
+public function delete2(){
+	$data = array(
+		'fee' => '' ,
+	);
+	$this->db->where('id',1);
+	$this->db->update('sms',$data);
+	redirect('apanel/smssettings');
 }
 	public function allStudent(){
 		$data['subPage'] = 'SMS';
@@ -445,7 +513,6 @@ alert ('Your Msg Is Successfully');
 		$data['footerJs'] = "footerJs/studentRegisterJs";
 		$this->load->view("include/template",$data);
 	}
-	
 	public function takeFee(){
 		$data['subPage'] = 'FEE';
 		$data['title'] = "Fee Recieve";
@@ -508,10 +575,53 @@ alert ('Your Msg Is Successfully');
 		$data['footerJs'] = "footerJs/expenseJs";
 		$this->load->view("include/template",$data);
 	}
-	public function showBranch(){
-		
-	}
 
+	public function Coursefee(){
+		$data['subPage'] = 'Course Fee';
+		$data['title'] = "Course Fee";
+		$data['smallTitle'] = "Fee";
+		$data['pageTitle'] = "Course Fee";
+		$data['mainContent'] = "Course_fee";
+		
+		$data['headerCss'] = "headerCss/studentRegisterCss";
+		$data['footerJs'] = "footerJs/expenseJs";
+		$this->load->view("include/template",$data);
+	}
+	public function Coursefee2(){
+		//$id=$this->uri->segment(3);
+		$id=$this->input->post('course_id');
+		$this->load->model('coursefee');
+		$data['dt']= $this->coursefee->details($id);
+		// $data['headerCss'] = "headerCss/studentListCss";
+		// $data['footerJs'] = "footerJs/studentListJs";
+       $this->load->view('stulist',$data);
+		
+		// $data['subPage'] = 'Course Fee';
+		// $data['title'] = "Course Fee";
+		// $data['smallTitle'] = "Fee";
+		// $data['pageTitle'] = "Course Fee";
+		// $data['mainContent'] = "Course_fee";
+		// $data['headerCss'] = "headerCss/studentRegisterCss";
+		// $data['footerJs'] = "footerJs/expenseJs";
+
+
+	// 	//print_r($dt);
+	// 	// foreach($dt as $rw)
+    //     // {
+	// 	//    $x=$rw->student_id.$rw->name;
+	// 	//    $t['t']=array(
+	// 	// 	   'name'=>$x
+	// 	//    );
+	// 	//    $this->load->view('course_fee',$t);
+	// 	// }
+	// 	//print_r($t);
+	// 	// $this->load->view('course_fee',$dt);
+
+	// 	foreach($dt as $rw)
+    //     {
+    //        echo "<a href=''>".$rw->student_id.$rw->name."<br>"."</a>";
+    //     }
+	// }
 	// public function dailyExpense(){
 	// 	$data['subPage'] = 'Accounting';
 	// 	$data['title'] = "Daily Expense";
@@ -522,6 +632,7 @@ alert ('Your Msg Is Successfully');
 	// 	$data['footerJs'] = "footerJs/expenseJs";
 	// 	$this->load->view("include/template",$data);
 	// }
+}
 	
 	public function dayBook(){
 		$data['subPage'] = 'Accounting';

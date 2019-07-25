@@ -5,4 +5,6 @@
            $data= $this->db->insert('sms',$msg);
            return $data;
         }
+
+
 	}
