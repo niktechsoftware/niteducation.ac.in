@@ -61,7 +61,6 @@
 	  	$("#showlist").html(data);
       });
   });
-
   });
   </script>
  

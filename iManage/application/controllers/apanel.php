@@ -412,36 +412,36 @@ class Apanel extends CI_Controller{
 		$this->load->view("include/template",$data);
 	}
 	public function smsinsert(){
-		$this->db->where('id',1 );
-		$sms = $this->db->get('sms');
+		$this->db->where('id',1);
+		$sms=$this->db->get('sms');
 		if($sms->num_rows()>0){
-			$msg = array(
-				'addmission'=>$this->input->post('admissionsms')  , 	
+			$msg=array(
+				'addmission'=>$this->input->post('admissionsms'), 	
 				'date'=>date('y-m-d')
 			);
 			$this->db->where('id',1 );
 			$this->db->update('sms',$msg);		
 		}else{
-		$msg= array(
-			'addmission'=>$this->input->post('admissionsms')  , 	
+		$msg=array(
+			'addmission'=>$this->input->post('admissionsms'), 	
 			'date'=>date('y-m-d')
 			);
 			$this->db->insert('sms',$msg);
 		}
 }
 public function feeinsert(){
-	$this->db->where('id',1 );
-	$sms = $this->db->get('sms');
+	$this->db->where('id',1);
+	$sms=$this->db->get('sms');
 	if($sms->num_rows()>0){
-		$msg = array(
-			'fee' =>    $this->input->post('fee')  , 	
+		$msg=array(
+			'fee'=>$this->input->post('fee'), 	
 			'date'=>date('y-m-d')
 		);
 		$this->db->where('id',1 );
 		$this->db->update('sms',$msg);
 	}else{
-	$msg= array(
-		'fee' =>    $this->input->post('fee')  , 	
+	$msg=array(
+		'fee'=>$this->input->post('fee'), 	
 		'date'=>date('y-m-d')
 		);
 		$this->db->insert('sms',$msg);
