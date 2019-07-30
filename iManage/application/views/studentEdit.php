@@ -64,7 +64,17 @@
                                           <div class="form-group">
                                             <label for="inputEmail3" class="col-sm-2 control-label">Batch No</label>
                                             <div class="col-sm-4">
-                                                <input class="form-control" type="text" name="branchNo" placeholder="Batch No" value = "<?php echo $grtid1->branch_no;?>" required="required">
+                                                <!-- <input class="form-control" type="text" name="branchNo" placeholder="Batch No" value = "<?php echo $grtid1->branch_no;?>" required="required"> -->
+                                                <select name="batchId" class="form-control" required="required">
+													<option value="">-Select Batch-</option>
+                                                    <?php 
+                                                        $courses= $this->db->get('batch_number')->result_array();
+														
+														foreach($courses as $row):
+													?>
+														<option value="<?php echo $row['id'];?>" <?php if($grtid1->branch_no==$row['id']){echo 'selected="selected"';}?> ><?php echo $row['batch_no'];?></option>
+													<?php endforeach;?>
+												</select>
                                             </div>
                                              <label for="inputEmail3" class="col-sm-2 control-label">Select Branch</label>
                                             <div class="col-sm-4">
@@ -220,10 +230,24 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                         <label for="inputEmail3" class="col-sm-2 control-label">Remark</label>
+                                         <label for="inputEmail3" class="col-sm-2 control-label">Note</label>
                                             <div class="col-sm-4">
                                                 <textarea rows="2" cols="12" name ="remark" class="col-sm-12"><?php echo $grtid1->remark;?></textarea>
                                             </div>
+                                            <label for="inputEmail3" class="col-sm-2 control-label"> Reffered By</label>
+                                            <div class="col-sm-4">
+                                                <select  class="form-control" name="reffId" required="required">
+			                                    	<option value="">-Select Reference-</option>
+                                                    <?php 
+                                                    $reff= $this->db->get('reffered_by')->result_array();
+                                                    foreach($reff as $dt)
+                                                   { ?>
+                                                    <option value="<?php echo $dt['id'];?>" <?php if($grtid1->reffered_id==$dt['id']){echo 'selected="selected"';}?>><?php echo $dt['refference'];}?></option>
+                                                        
+			                                    </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
                                             <div class="col-sm-offset-2 col-sm-3">
                                             	<input type="hidden" name="submitType" value="admin">
                                                 <button type="submit" class="btn btn-success">Save Student Information</button>

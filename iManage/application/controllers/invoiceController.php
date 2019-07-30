@@ -20,9 +20,8 @@ class InvoiceController extends CI_Controller{
 	
 	public function registerC() {
 	    $studentId = $this->uri->segment(3);
-		
-    	$institute_info = mysql_query("select * from general_settings");
-    	$data['info'] = mysql_fetch_object($institute_info);
+		//echo $studentId;exit;
+    	$data['info'] = $this->db->query("select * from general_settings")->row();
 	    
 	    $this->db->where("student_id",$studentId);
 	    $data['detail'] = $this->db->get("student_info")->row();
