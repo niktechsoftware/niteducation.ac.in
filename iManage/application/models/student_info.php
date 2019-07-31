@@ -29,7 +29,8 @@ class student_info extends CI_Model{
 				"joinDate" => date("Y-m-d"),
 				"joinTime" => date("H:i:s"),
 				"branch_id" => $this->input->post("branchId"),
-				"branch_no" => $this->input->post("branchNo"),
+				"branch_no" => $this->input->post("batchId"),
+				"reffered_id" => $this->input->post("reffId"),
 				"remark"=>$this->input->post("remark"),
 				"isApprove" => "yes"
 			);

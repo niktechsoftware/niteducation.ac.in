@@ -140,7 +140,7 @@
                                         </div>
                                         
                                         <div class="form-group">
-                                            <label for="inputEmail3" class="col-sm-2 control-label">Select Reference</label>
+                                            <label for="inputEmail3" class="col-sm-2 control-label"> Reffered By</label>
                                             <div class="col-sm-4">
                                                 <select  class="form-control" name="reffId" required="required">
 			                                    	<option value="">-Select Reference-</option>
@@ -219,7 +219,7 @@
                                             </div>
                                         </div>
                                          <div class="form-group">
-                                         <label for="inputEmail3" class="col-sm-2 control-label">Remark</label>
+                                         <label for="inputEmail3" class="col-sm-2 control-label">Note</label>
                                             <div class="col-sm-4">
                                                 <textarea rows="2" cols="12" name ="remark" class="col-sm-12"></textarea>
                                             </div>
