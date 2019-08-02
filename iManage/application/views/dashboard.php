@@ -5,7 +5,7 @@
                             <div class="panel info-box panel-white">
                                 <div class="panel-body">
                                     <div class="info-box-stats">
-                                        <p><h4><?php  if($notapproved){echo $notapproved."Not Approve ,";}?><?php if($approved){echo $approved." Approve";}?></h4></p>
+                                    <p class="counter"><?php  if($notapproved){echo $notapproved;}?><?php if($approved){echo $approved;}?></p>
                                         <span class="info-box-title">Total Registration</span>
                                     </div>
                                     <div class="info-box-icon">
@@ -43,8 +43,8 @@
                             <div class="panel info-box panel-white">
                                 <div class="panel-body">
                                     <div class="info-box-stats">
-                                        <p><span class="counter"><?php echo $collection;?></span></p>
-                                        <span class="info-box-title">Todays Collection</span>
+                                        <p><span class="counter"><?php if($collection){echo $collection;}else{echo "0.00";} ?></span></p>
+                                        <span class="info-box-title">Today's Collection</span>
                                     </div>
                                     <div class="info-box-icon">
                                         <i class="icon-basket"></i>
@@ -62,8 +62,8 @@
                             <div class="panel info-box panel-white">
                                 <div class="panel-body">
                                     <div class="info-box-stats">
-                                        <p class="counter"><?php echo $exp;?></p>
-                                        <span class="info-box-title">Todays Expenses</span>
+                                        <p class="counter"><?php if($exp){echo $exp;}else{echo "0.00";}?></p>
+                                        <span class="info-box-title">Today's Expenses</span>
                                     </div>
                                     <div class="info-box-icon">
                                         <i class="icon-basket"></i>
@@ -84,7 +84,7 @@
                                 <div class="panel-body">
                                     <div class="info-box-stats">
                                       <a href="<?php echo base_url();?>apanel/showcourse"> <p class="counter"><?php echo $course;?></p></a>
-                                        <span class="info-box-title">Total Course</span>
+                                        <span class="info-box-title">Total Courses</span>
                                     </div>
                                     <div class="info-box-icon">
                                         <i class="icon-eye"></i>
@@ -124,7 +124,7 @@
                  if($h>0){
                 ?>
 
-                      <a href="<?php echo base_url();?>apanel/bdaydetail"><p class="counter"><?php echo COUNT($sdate);?></p>
+                      <a href="<?php echo base_url();?>apanel/bdaydetail"><p class="counter"><?php echo COUNT($sdate);?></p></a>
         <?php  }
 
          }
@@ -157,7 +157,7 @@
                             <div class="panel info-box panel-white">
                                 <div class="panel-body">
                                     <div class="info-box-stats">
-                                        <p class="counter"><?php echo $exp;?></p>
+                                        <!-- <p class="counter"><?php echo $exp;?></p> -->
                                         <span class="info-box-title">Personal Emails</span>
                                         <a href="http://webmail.niktechsoftware.com/" target="_blank">info@niteducation.ac.in</a>
                                         <a href="http://webmail.niktechsoftware.com/" target="_blank">contact@niteducation.ac.in</a>
@@ -282,7 +282,7 @@
                                                 <ul class="list-unstyled weather-info">
                                                     <li>Cloud Cover <span class="pull-right"><b>60%</b></span></li>
                                                     <li>Ceiling <span class="pull-right"><b>17800 ft</b></span></li>
-                                                    <li>Dew Point <span class="pull-right"><b>70° F</b></span></li>
+                                                    <li>Dew Point <span class="pull-right"><b>70ï¿½ F</b></span></li>
                                                     <li>Visibility <span class="pull-right"><b>10 mi</b></span></li>
                                                 </ul>
                                             </div>
@@ -369,7 +369,7 @@
                                     <div class="live-tile" data-mode="flip" data-speed="750" data-delay="3000">
                                         <span class="tile-title pull-right">New Tweets</span>
                                         <i class="fa fa-twitter"></i>
-                                        <div><h2 class="no-m">It’s kind of fun to do the impossible...</h2><span class="tile-date">10 April, 2015</span></div>
+                                        <div><h2 class="no-m">Itï¿½s kind of fun to do the impossible...</h2><span class="tile-date">10 April, 2015</span></div>
                                         <div><h2 class="no-m">Sometimes by losing a battle you find a new way to win the war...</h2><span class="tile-date">6 April, 2015</span></div>
                                     </div>
                                 </div>
