@@ -8,13 +8,13 @@
                             	<div class="panel-body">
                                 	<form class="form-horizontal" action="<?php echo base_url();?>sms/batchWise" method="post">
                                 	    <div class="alert alert-success">
-  <strong><?php echo "Current SMS Balance = ".checkBalSms();?></strong> 
-</div>
+                                        <strong><?php echo "Current SMS Balance = ".checkBalSms();?></strong> 
+                                        </div>
                                 	    <?php if($this->uri->segment(3)){
                                 	    $sendf = $this->uri->segment(3);?>
                                 	       <div class="alert alert-warning">
-  <strong><?php echo "successfully SMS Send =".$sendf;?> </strong> 
-</div>
+                                        <strong><?php echo "successfully SMS Send =".$sendf;?> </strong> 
+                                        </div>
                                 	   <?php }?>
                                         <div class="form-group">
                                             <label for="input-Default" class="col-sm-2 control-label">Select Branch</label>

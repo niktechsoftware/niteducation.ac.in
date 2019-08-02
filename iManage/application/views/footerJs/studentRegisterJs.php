@@ -23,6 +23,7 @@
 			$("#installp").hide();
 				$("#branchid").change(function(){
 					var branchId = $("#branchid").val();
+					alert(branchId);
 					var form_data = {
 							branchId : branchId
 							};

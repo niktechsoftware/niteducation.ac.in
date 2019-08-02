@@ -165,6 +165,7 @@ class student_info extends CI_Model{
 		$this->db->group_by("courseApplied");
 		return $this->db->get("student_info")->result();
 	}
+	
 		function getDataById1($id,$course){
 		$this->db->where("branch_id",$id);
 		$this->db->where("courseApplied",$course);
@@ -216,8 +217,13 @@ class student_info extends CI_Model{
 	function todays_collection(){
 		$date1=date('Y-m-d');
 	
-		$collection = $this->db->query("SELECT SUM(amount) as totday FROM day_book WHERE pay_date='$date1' and 	dabit_cradit='credit' ")->row();
-		return $collection->totday;
+		$collection = $this->db->query("SELECT SUM(amount) as totday FROM day_book WHERE pay_date='$date1' and 	dabit_cradit='credit' ");
+		if($collection->num_rows()>0){
+			return $collection->row()->totday;
+		}else{
+			return "0.00";
+		}
+		
 	}
 
 	function birthday()
@@ -248,9 +254,9 @@ class student_info extends CI_Model{
 	
 	function todays_expenses(){
 		$date1=date('Y-m-d');
+		$collection = $this->db->query("SELECT SUM(amount) as totday FROM day_book WHERE pay_date='$date1' and 	dabit_cradit='dabit' ");
+		
+		return $collection->row()->totday;
 	
-	
-		$collection = $this->db->query("SELECT SUM(amount) as totday FROM day_book WHERE pay_date='$date1' and 	dabit_cradit='dabit' ")->row();
-		return $collection->totday;
 	}
 }

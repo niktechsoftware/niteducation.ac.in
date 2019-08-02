@@ -15,7 +15,7 @@
       </div> 
       <?php $deta = $this->db->get("sms")->row();?>
       <div class="col-md-6">
-            <textarea rows="4" cols="85" name="admissionsms" id="admissionsms" required>
+            <textarea class="form-control" name="admissionsms" id="admissionsms" required>
             <?php echo $deta->addmission;?>
             </textarea>
       </div>
@@ -29,7 +29,7 @@
       </div> 
       <?php $deta = $this->db->get("sms")->row();?>
       <div class="col-md-6">
-            <textarea rows="4" cols="85" name="feepayment" id="feepayment" required value="">
+            <textarea class="form-control" name="feepayment" id="feepayment" required value="">
             <?php echo $deta->fee;?>
       </textarea>
       </div>
