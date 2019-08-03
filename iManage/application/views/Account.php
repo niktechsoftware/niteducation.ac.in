@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="row" >
-        <div class="col-md-11" id="branchdata">
+        <div class="col-md-11" id="branchdata" style="margin-left:70px;margin-top:30px;">
           
         </div>
       </div>

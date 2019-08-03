@@ -7,25 +7,32 @@
 			<th>S no.</th>
 			<th>Student Id</th>
 			<th>Student Name</th>
+			<th>Batch No</th>
 			<th>Total Fee</th>
 			<th>Paid Amount</th>
 			<th>Remaining Balance</th>
 			<th>Fee Type</th>
 			<th>serial No</th>
+
 		</tr>
 	</thead>
 	<tbody>
 		<?php  $i=1;
-		foreach($view->result() as $stud):
+		foreach($view as $stud):
 			$studid=$stud->student_id;
 			$this->db->where('student_id',$studid);
 			$fee = $this->db->get('cal_paid_fee');
 			foreach($fee->result() as $row):
+				$studCourse = $stud->branch_no;
+				$this->db->where('id',$studCourse);
+			$course = $this->db->get('batch_number');
+			foreach($course->result() as $row1):
 			?>
 		<tr>
 			<td><?php echo $i;?></td>
 			<td><?php echo $stud->student_id;?></td>
 			<td><?php echo $stud->name;?></td>
+			<td><?php echo $row1->batch_no;?></td>
 			<td><?php echo $stud->total_fee;?></td>
 			<td><?php echo $row->paid_amount;?></td>
 			<td><?php echo $row->remaining;?></td>
@@ -33,11 +40,11 @@
 			<td><?php echo $stud->sr_no;?></td>
 		</tr>
 	<?php $i++; 
+endforeach;
 		endforeach;
 	 endforeach;?>
 	</tbody>
-</table>
-</div>
+</table></div>
 <script type="text/javascript">
 	$(document).ready( function () {
     $('#myTable').DataTable();
