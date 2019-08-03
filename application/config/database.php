@@ -56,7 +56,7 @@ $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
 
-$db['default']['database'] = 'nitedu';
+$db['default']['database'] = 'gfincuct_nitedu';
 //$db['default']['database'] = 'nit';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';

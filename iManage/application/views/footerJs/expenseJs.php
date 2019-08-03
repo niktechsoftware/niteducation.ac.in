@@ -15,6 +15,7 @@
         <script src="<?php echo base_url()?>assets/js/modern.min.js"></script>
         <script src="<?php echo base_url()?>assets/js/pages/form-elements.js"></script>
         
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
         <script>
 			$(document).ready(function(){
 				$("#reason").hide();
@@ -30,35 +31,23 @@
 						$("#reason").hide();
 					}
 				});
-                $("#branch1").hide();
-                $("#course1").hide();
-                $("#stud1").hide();
-                $("#total_bal").hide();
-                $("#test").change(function(){
-                    var value= $("#test").val();
-                    //alert(value);
-                    if(value == "branch"){
-                        $("#branch1").show();
-                        $("#course1").hide();
-                         $("#stud1").hide();
-                    } else if (value == "crouse"){
-                        $("#course1").show();
-                        $("#branch1").hide();
-                        $("#stud1").hide();
-                    } else if(value == "student"){
-                        $("#stud1").show();
-                        $("#branch1").hide();
-                        $("#course1").hide();
-                    }
-                });
+              $('#test').change(function(){
+                var branch = $('#test').val();
+             //   alert(branch);
+                $.post("<?php echo base_url('apanel/showbranch') ?>", {branch : branch}, function(data){
 
-                $("#test1").change(function(){
-                    var value1= $("#test1").val();
-                    alert(value1);
-                    if(value1 == "Total"){
-                        $("#total_bal").show();
-                    }
+                $("#branchid").html(data);
+                //alert(data);
+        });
+              });
+              $('#branchid').change(function(){
+                var studdata = $('#branchidd').val();
+               // alert(studdata);
+                $.post("<?php echo base_url('apanel/showbranchdata')?>",{studdata :studdata},function(data){
+                    $("#branchdata").html(data);
                 });
+              });
+
 			});
         </script>
      

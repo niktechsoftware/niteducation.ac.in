@@ -901,5 +901,33 @@ public function delete2(){
 		    redirect(base_url()."apanel/varification/authFals");
 		endif;
 	}
+	///// accounting code start
+	public function showbranch(){
+		$branch= $this->input->post('branch');
+
+		$this->load->model('account');
+		if($branch =='branch'){
+		$data['view']= $this->account->showbranch($branch);
+		$this->load->view('account/branch',$data);
+	}else if($branch =='course'){
+		$data['view']= $this->account->showbranch($branch);
+		$this->load->view('account/course',$data);
+		}else {
+			$data['view']= $this->account->showbranch($branch);
+		$this->load->view('account/batch',$data);
+		}
+	}
+	public function showbranchdata(){
+		$studdata= $this->input->post('studdata');
+		$this->load->model('account');
+		if($studdata >1000){
+	$data['view'] = $this->account->showbranchdata($studdata);
+		$this->load->view('account/branchstud',$data);}
+		else {
+			$data['view'] = $this->account->showcoursedata($studdata);
+		$this->load->view('account/coursestud',$data);}
+		
+	}
+	/////
 	
 }
