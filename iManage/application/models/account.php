@@ -23,6 +23,11 @@
 				$this->db->where('courseApplied',$studdata);
 				$query= $this->db->get('student_info')->result();
 				return ($query);
+		}
+		public function showstudbatch($studdata){
+			$this->db->where('id',$studdata);
+				$query= $this->db->get('student_info')->result();
+				return ($query);
 		}	
 	}
 ?>

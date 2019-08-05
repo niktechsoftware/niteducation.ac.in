@@ -923,9 +923,13 @@ public function delete2(){
 		if($studdata >1000){
 	$data['view'] = $this->account->showbranchdata($studdata);
 		$this->load->view('account/branchstud',$data);}
-		else {
+		else if($studdata >9){
 			$data['view'] = $this->account->showcoursedata($studdata);
 		$this->load->view('account/coursestud',$data);}
+		else{
+			$data['view'] = $this->account->showstudbatch($studdata);
+		$this->load->view('account/batchstud',$data);
+		}
 		
 	}
 	/////
