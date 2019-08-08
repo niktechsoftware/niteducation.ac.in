@@ -852,7 +852,6 @@ public function delete2(){
 		if($status == "submitted") {
 			$sn = $this->db->query("select * from pmgdish WHERE sino = '$id'");
 			$sno = $sn->row();
-			
 			$data = array(
 				"status" => $status
 			);
@@ -933,5 +932,12 @@ public function delete2(){
 		
 	}
 	/////
+	public function specialCourse(){
+		$spCourse=$this->input->post('spCourse');
+		$this->load->model('coursefee');
+		$data = $this->coursefee->spCourse($spCourse);
+	$data1['view'] = $data;
+		$this->load->view('spCourse',$data1); 
+	}
 	
 }
