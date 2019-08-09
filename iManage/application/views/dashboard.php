@@ -124,7 +124,7 @@
                  if($h>0){
                 ?>
 
-                      <a href="<?php echo base_url();?>apanel/bdaydetail"><p class="counter"><?php echo COUNT($sdate);?></p></a>
+                      <a href="<?php echo base_url();?>apanel/bdaydetail"><p class="counter"><?php echo count($sdate);?></p></a>
         <?php  }
 
          }

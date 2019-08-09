@@ -20,8 +20,11 @@
 			$studid=$stud->student_id;
 			$this->db->where('student_id',$studid);
 			$fee = $this->db->get('cal_paid_fee');
+		$dss=$this->db->where('student_id',$studid)->from("cal_paid_fee")->count_all_results();
+				print_r($dss);exit();
+			if($fee->num_rows()>0){
 			foreach($fee->result() as $row):
-			?>
+				?>
 		<tr>
 			<td><?php echo $i;?></td>
 			<td><?php echo $stud->student_id;?></td>
@@ -34,6 +37,7 @@
 		</tr>
 	<?php $i++; 
 		endforeach;
+	}
 	 endforeach;?>
 	</tbody>
 </table>
@@ -42,4 +46,5 @@
 	$(document).ready( function () {
     $('#myTable').DataTable();
 } );
+	
 </script>
