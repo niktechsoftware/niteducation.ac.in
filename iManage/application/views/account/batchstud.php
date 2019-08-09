@@ -1,5 +1,6 @@
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-<script type="text/javascript" src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script> -->
+  <script src="//cdn.datatables.net/plug-ins/1.10.19/api/sum().js"></script>
 <div class="col-md-11">
 <table class="table table-bordered" id="myTable" >
 	<thead>
@@ -47,6 +48,40 @@ endforeach;
 </table></div>
 <script type="text/javascript">
 	$(document).ready( function () {
-    $('#myTable').DataTable();
+    //$('#myTable').DataTable();
+
+	$('#myTable').DataTable( {
+        "footerCallback": function ( row, data, start, end, display ) {
+            var api = this.api(), data;
+            // Remove the formatting to get integer data for summation
+            var intVal = function ( i ) {
+                return typeof i === 'string' ?
+                    i.replace('/[\Rs. ,]/g', '')*1 :
+                    typeof i === 'number' ?
+                        i : 0;
+            };
+            // Total over all pages
+            total = api
+                .column( 3 )
+                .data()
+                .reduce( function (a, b) {  
+                    return intVal(a) + intVal(b.replace('<i class="fa fa-inr"></i>&nbsp;', ''));
+                }, 0 );
+ 
+            // Total over this page
+            pageTotal = api
+                .column( 3, { page: 'current'} )
+                .data()
+                .reduce( function (a, b) {
+                    return intVal(a) + intVal(b.replace('<i class="fa fa-inr"></i>&nbsp;', ''));
+                }, 0 );
+ 
+            // Update footer
+            $( api.column( 3 ).footer() ).html(
+                //'$'+pageTotal +' ( $'+ total +' total)'
+                'Total : <i class="fa fa-inr"></i>&nbsp;'+ pageTotal
+            );
+        }
+    } );
 } );
 </script>

@@ -17,5 +17,11 @@ class Coursefee extends CI_Model
         //    echo "<a href=''>".$rw->student_id.$rw->name."<br>"."</a>";
         // }
     }
+    public function spCourse($spCourse){
+       $query= $this->db->get('pmgdish')->result();
+      //print_r($query);
+      //exit();
+        return $query;
+    }
 }
 ?>

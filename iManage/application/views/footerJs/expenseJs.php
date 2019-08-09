@@ -16,6 +16,7 @@
         <script src="<?php echo base_url()?>assets/js/pages/form-elements.js"></script>
         
 <script type="text/javascript" src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="http://cdn.datatables.net/plug-ins/1.10.19/api/sum().js"></script>
         <script>
 			$(document).ready(function(){
 				$("#reason").hide();
@@ -47,6 +48,7 @@
                     $("#branchdata").html(data);
                 });
               });
+//////
 
 			});
         </script>
