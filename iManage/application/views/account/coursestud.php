@@ -17,7 +17,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<?php  $i=1;
+		<?php  $i=1; $sum=0;$paid=0;$remaining=0;
 		foreach($view as $stud):
 			$studid=$stud->student_id;
 			$this->db->where('student_id',$studid);
@@ -33,9 +33,12 @@
 			<td><?php echo $stud->student_id;?></td>
 			<td><?php echo $stud->name;?></td>
 			<td><?php echo $row1->course_name;?></td>
-			<td><?php echo $stud->total_fee;?></td>
-			<td><?php echo $row->paid_amount;?></td>
-			<td><?php echo $row->remaining;?></td>
+			<td><?php echo $stud->total_fee;
+			$sum= $sum+$stud->total_fee;?></td>
+			<td><?php echo $row->paid_amount;
+			$paid= $paid+$row->paid_amount;?></td>
+			<td><?php echo $row->remaining;
+			$remaining=$remaining+$row->remaining;?></td>
 			<td><?php echo $stud->fee_method;?></td>
 			<td><?php echo $stud->sr_no;?></td>
 		</tr>
@@ -43,7 +46,16 @@
 endforeach;
 		endforeach;
 	 endforeach;?>
+	
 	</tbody>
+	<tfoot>
+		 <tr>
+	 	<td colspan=4 class="text-right">Total=</td>
+	 	<td><?php echo $sum;?></td>
+	 	<td><?php echo $paid;?></td>
+	 	<td colspan="3"><?php echo $remaining;?></td>
+	 </tr>
+	</tfoot>
 </table></div>
 <script type="text/javascript">
 	$(document).ready( function () {

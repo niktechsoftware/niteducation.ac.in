@@ -8,8 +8,11 @@
 				$course=$this->db->get('courses')->result();
 				return ($course);
 			}
-			else{
+			else if($branch == 'batch'){
 				$batch =$this->db->get('batch_number')->result();
+				return ($batch);
+			} else{
+				$batch =$this->db->get('pmgdish')->result();
 				return ($batch);
 			}
 		}

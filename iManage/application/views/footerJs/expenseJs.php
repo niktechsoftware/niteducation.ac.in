@@ -41,6 +41,10 @@
                 //alert(data);
         });
               });
+              // $('#test12').change(function(){
+              //   var pgmdisha $('#test12').val();
+              //   alert(pgmdisha);
+              // });
               $('#branchid').change(function(){
                 var studdata = $('#branchidd').val();
                // alert(studdata);

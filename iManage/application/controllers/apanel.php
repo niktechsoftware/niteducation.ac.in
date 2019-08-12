@@ -911,9 +911,13 @@ public function delete2(){
 	}else if($branch =='course'){
 		$data['view']= $this->account->showbranch($branch);
 		$this->load->view('account/course',$data);
-		}else {
+		}else if($branch =='batch'){
 			$data['view']= $this->account->showbranch($branch);
 		$this->load->view('account/batch',$data);
+		} else{
+			$data['view']= 'PMGDISHA';
+			//print_r($data);exit();
+		$this->load->view('account/pgdma',$data);
 		}
 	}
 	public function showbranchdata(){
@@ -925,7 +929,11 @@ public function delete2(){
 		else if($studdata >9){
 			$data['view'] = $this->account->showcoursedata($studdata);
 		$this->load->view('account/coursestud',$data);}
-		else{
+		else if($studdata =='PMGDISHA'){
+			$data['view']= $this->account->showbranch($studdata);
+		$this->load->view('account/pmgdisha',$data);
+		}
+		else {
 			$data['view'] = $this->account->showstudbatch($studdata);
 		$this->load->view('account/batchstud',$data);
 		}

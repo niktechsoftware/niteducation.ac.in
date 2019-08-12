@@ -3,7 +3,6 @@
                         <div class="col-md-12">
                             <div class="panel panel-white">
                             	<div class="panel-body">
-                            	
                                    <div class="table-responsive">
                                     <table id="example" class="display table" style="width: 100%; cellspacing: 0;">
                                         <thead>
@@ -21,7 +20,6 @@
                                         	<?php $i = 1;?>
                                         	<?php $birthday=$this->db->get('student_info');
                                                          $d=date('Y-m-d');
-                             
                      $cm=  date("m",strtotime($d));
                      $cd=  date("d",strtotime($d));
 
