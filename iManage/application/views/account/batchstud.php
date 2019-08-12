@@ -51,7 +51,7 @@ endforeach;
 	</tbody>
 	<tfoot>
 		 <tr>
-	 	<td colspan="3" class="text-right">Total:</td>
+	 	<td colspan="5" class="text-right">Total:</td>
 	 	<td><?php echo $paid;?></td>
 	 	<td colspan="3"><?php echo $remaining;?></td>
 	 </tr>
